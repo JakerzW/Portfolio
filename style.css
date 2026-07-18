@@ -1456,14 +1456,6 @@ button, input, textarea {
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        padding: 16px 16px !important;
-    }
-
-    .logo {
-        font-size: 1.3rem !important;
-    }
-    
     .at-a-glance-card {
         padding: 24px 16px !important;
     }
@@ -1563,15 +1555,6 @@ button, input, textarea {
 }
 
 @media (max-width: 480px) {
-    .header-container {
-        padding: 10px 12px !important;
-    }
-
-    .logo {
-        font-size: 0.95rem !important;
-        gap: 4px !important;
-    }
-    
     .at-a-glance-card {
         padding: 20px 12px !important;
     }
@@ -1663,14 +1646,6 @@ button, input, textarea {
 }
 
 @media (max-width: 1152px) {
-    .header-container {
-        padding: 20px 20px !important;
-    }
-
-    .logo {
-        font-size: 1.8rem !important;
-    }
-
     .interests-grid {
         grid-template-columns: 1fr !important;
         gap: 40px !important;
@@ -1702,6 +1677,37 @@ button, input, textarea {
         flex-direction: column !important;
         gap: 20px !important;
         align-items: center !important;
+    }
+}
+
+/* ==========================================================================
+   CONSOLIDATED RESPONSIVE HEADER & LOGO SCALING
+   ========================================================================== */
+@media (max-width: 1152px) {
+    .header-container {
+        padding: 20px 20px !important;
+    }
+    .logo {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 16px 16px !important;
+    }
+    .logo {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px 12px !important;
+    }
+    .logo {
+        font-size: 0.95rem !important;
+        gap: 4px !important;
     }
 }
 
