@@ -1,0 +1,145 @@
+======================================================================
+JAKE WALDER - GAME DESIGNER
+======================================================================
+Winchester, SO21 | 07805696730 | jiawalder@gmail.com | JakeWalder.com
+
+Game Designer with a decade of experience shipping 20+ titles across PC, 
+console and mobile, dedicated to building innovative, player-first 
+gaming experiences. Creative thinker and problem-solver who is always 
+coming up with new ideas and solutions. Seeking an exciting and unique 
+project to get stuck into.
+
+======================================================================
+EXPERIENCE
+======================================================================
+
+TRIPLEDOT STUDIOS, London
+Senior Game Designer | September 2022 - February 2026
+----------------------------------------------------------------------
+* Core Responsibilities: Owned the player experience and all gameplay 
+  content for Woodoku and Woodoku Blast, reporting directly to the CPO 
+  and Level Design Director. Created detailed design documents and 
+  wireframes, designed levels, and used data and experience to prioritise 
+  content and devise roadmaps.
+* Leadership & Mentorship: Led a 3-person level design team (Lead, Senior, 
+  Mid-level); successfully mentored one Junior to Mid-level to Senior, 
+  and another from Junior to Mid-level. Successfully completed an 
+  8-module corporate management development programme.
+* Team Collaboration: Directed the production of features and mechanics, 
+  working closely with Product, Analysts, Development, Art and QA to 
+  create the best possible features from pre-production to post-release.
+* Data & Analytics: Utilised analysis skills and ran intensive experiments 
+  to deeply understand player behaviour, evaluating the impact of design 
+  iterations to guide feature improvements and future roadmaps.
+
+Woodoku — 150M+ Downloads
+* Owned all gameplay elements; designed systems, levels and features. 
+  Created a level extension that increased engagement by 20% and ARPDAU 
+  by 15%. Engineered new shape-generation algorithms that boosted retention 
+  by 5%, designed a custom level editor, and curated and optimised 152 
+  levels weekly for LiveOps.
+
+Woodoku Blast — 20M+ Downloads
+* Owned the design and production of all gameplay elements, systems and 
+  UX design, including haptics and audio. Created features that drove a 
+  10% increase in ARPDAU, and devised extensive A/B testing and 
+  data-driven level design iterations to deeply understand player 
+  behaviour and boost retention by 5%.
+
+MEATHOOK, Indie Title
+Design Consultant, Composer | February 2025 - July 2026
+----------------------------------------------------------------------
+* Consulted on the game’s design, directly improving mechanics, user 
+  flows, level design and UI/UX design.
+* Co-wrote, produced, mixed and mastered the soundtrack for the indie 
+  title Meathook under the alias HYPNO.
+
+PLAYTIKA, London
+Game Designer | June 2020 - June 2022
+----------------------------------------------------------------------
+* Collaborated with the Product Lead as the sole game designer, providing 
+  the game design and player perspective to creative discussions for 
+  BRIX Blast Friends and BRIX Blast Rivals.
+* Designed and curated dozens of features, managing their development 
+  from the initial idea to final implementation by writing detailed 
+  specifications and overseeing the work of the developers and artists.
+* Solely responsible for level design for both titles, utilising data 
+  analysis to inform level design iterations that optimised and improved 
+  retention, engagement and monetisation.
+
+MASSIVE MONSTER, Southampton
+QA Lead & Level Designer | October 2015 - August 2016
+----------------------------------------------------------------------
+* "Your dedication, attitude and all round personality have made you 
+  a joy to work with." – Jay Armstrong, Co-Founder
+* Designed and curated over 50% of the levels and designed various 
+  game objects and mechanics for The Adventure Pals, and contributed to 
+  the level design effort for Never Give Up.
+* Responsible for all QA and level curation for both titles, ensuring 
+  high level quality and reliable game stability.
+
+EXCALIBUR PUBLISHING, Banbury
+QA Tester | October 2015 - August 2016
+----------------------------------------------------------------------
+* Responsible for QA of over 10 Steam titles, including Jalopy and 
+  Shoppe Keep; which required a strong grasp of gameplay mechanics to 
+  effectively identify, analyse and document bugs.
+
+======================================================================
+EDUCATION
+======================================================================
+
+Bournemouth University
+BSc Games Programming (2:1) | September 2016 - June 2019
+----------------------------------------------------------------------
+* Completed a research dissertation involving a reaction-time-based 
+  mobile game in Unity (75%) and developed core skills through the 
+  following modules: Gameplay, Physics, UI, Core Loops and AI.
+
+Peter Symonds College
+Maths, Physics & Computing A-Levels | September 2013 - June 2015
+
+======================================================================
+PERSONAL PROJECTS
+======================================================================
+
+Walder Games (Independent Game Developer) | February 2026 - Present
+----------------------------------------------------------------------
+* Designed, developed and released a mobile game called Penguin Slide 
+  on itch.io for Android and Web. Programmed in Unity and created all 
+  art, music, SFX and levels, utilising Antigravity to accelerate 
+  development.
+
+HYPNO (Electronic Music Duo) | 2020 - Present
+----------------------------------------------------------------------
+* Co-wrote, produced and mixed 3 singles released across all major 
+  music platforms; created custom single artwork using Photoshop.
+
+======================================================================
+SKILLS
+======================================================================
+* Level Design, Gameplay Design, Systems Design, UI/UX, LiveOps, 
+  Balancing & Economy, Wireframing, QA Systems.
+* Unity, Photoshop, Looker, Figma, Miro, VSCode, Aseprite, Excel/Sheets, 
+  GitHub, JIRA, Confluence, Antigravity, Blender.
+* Experience with C#, C++ and SQL and highly knowledgeable in all 
+  core programming fundamentals.
+
+======================================================================
+INTERESTS
+======================================================================
+* Travelling: Currently travelling around Southeast Asia since February 2026.
+* Music: Guitarist, self-taught music producer currently writing and 
+  producing 2 albums. Previously recorded with a Grammy-winning producer, 
+  aired by BBC Introducing and performed at a music festival.
+* Games: Constantly playing and staying up to date with the console, 
+  PC and mobile markets.
+* Hardware & Audio: Utilise self-taught electronics knowledge to modify 
+  guitars and create guitar pedals.
+
+======================================================================
+FAVOURITE GAMES
+======================================================================
+Assassin’s Creed, Pokemon, Baldur’s Gate 3, Skyrim, CS:GO, Minecraft, 
+The Witcher 3, Halo, Stardew Valley, Zelda.
+======================================================================

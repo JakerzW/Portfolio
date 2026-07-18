@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jake Walder is a Senior Video Game Designer and Level Designer with a decade of experience shipping 20+ titles across PC, console and mobile. Discover portfolio, projects and CV.">
+    <meta name="keywords"
+        content="Jake Walder, Game Designer, Level Designer, Video Game Design, Portfolio, Playtika, Tripledot, Woodoku, Massive Monster, Game Development C#">
+    <meta name="author" content="Jake Walder">
+    <title>Jake Walder | Senior Game Designer & Level Designer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Header & Navigation -->
+    <header id="site-header" class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-name">Jake Walder</span> <span class="logo-pipe">|</span> <span
+                    class="logo-title">Game Designer</span>
+            </a>
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#interests" class="nav-link">Interests</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+            <div class="hero-grid">
+                <!-- Left Column: Hero Text and Actions -->
+                <div class="hero-left">
+                    <h1 class="hero-title">Creating <span class="text-glow">original</span> and <span
+                            class="text-glow">compelling</span> player-first experiences</h1>
+                    <p class="hero-subtitle">
+                        I’m a <strong>Game Designer</strong> with a <strong>decade of experience</strong> shipping over
+                        15 titles across PC, console and mobile. As a <strong>hands-on all-rounder</strong>, I bring a
+                        unique blend of <strong>creative artistry</strong> and <strong>technical ability</strong> to
+                        every project, adapting seamlessly to <strong>any genre or platform</strong> to create
+                        experiences that just feel <strong>great to play</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <a href="Jake_Walder_CV.pdf" class="btn btn-tertiary" download>
+                            <svg class="icon-download" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 16L12 3M12 16L17 11M12 16L7 11M3 15V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V15"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Column: Redesigned stats grid -->
+                <div class="hero-right">
+                    <div class="at-a-glance-card">
+                        <div class="glance-grid">
+                            <div class="glance-box">
+                                <div class="glance-number">10</div>
+                                <div class="glance-label">Years experience</div>
+                            </div>
+                            <div class="glance-box">
+                                <div class="glance-number">15+</div>
+                                <div class="glance-label">Titles<br>shipped</div>
+                            </div>
+                            <div class="glance-box">
+                                <div class="glance-number">180M+</div>
+                                <div class="glance-label">Total downloads</div>
+                            </div>
+                            <div class="glance-box">
+                                <div class="glance-number">8+</div>
+                                <div class="glance-label">Platforms supported</div>
+                            </div>
+                        </div>
+                        <div class="glance-icons">
+                            <!-- Xbox Icon -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="Xbox">
+                                <path
+                                    d="M7.202 15.967a8 8 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33m-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.4 8.4 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.5 9.5 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4 4 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.8 7.8 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12 12 0 0 1-.654-.319Z" />
+                            </svg>
+                            <!-- PlayStation Icon -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="PlayStation">
+                                <path
+                                    d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955 1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z" />
+                            </svg>
+                            <!-- Switch Icon -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="Nintendo Switch">
+                                <path
+                                    d="M9.34 8.005c0-4.38.01-7.972.023-7.982C9.373.01 10.036 0 10.831 0c1.153 0 1.51.01 1.743.05 1.73.298 3.045 1.6 3.373 3.326.046.242.053.809.053 4.61 0 4.06.005 4.537-.123 4.976-.022.076-.048.15-.08.242a4.14 4.14 0 0 1-3.426 2.767c-.317.033-2.889.046-2.978.013-.05-.02-.053-.752-.053-7.979m4.675.269a1.62 1.62 0 0 0-1.113-1.034 1.61 1.61 0 0 0-1.938 1.073 1.9 1.9 0 0 0-.014.935 1.63 1.63 0 0 0 1.952 1.107c.51-.136.908-.504 1.11-1.028.11-.285.113-.742.003-1.053M3.71 3.317c-.208.04-.526.199-.695.348-.348.301-.52.729-.494 1.232.013.262.03.332.136.544.155.321.39.556.712.715.222.11.278.123.567.133.261.01.354 0 .53-.06.719-.242 1.153-.94 1.03-1.656-.142-.852-.95-1.422-1.786-1.256" />
+                                <path
+                                    d="M3.425.053a4.14 4.14 0 0 0-3.28 3.015C0 3.628-.01 3.956.005 8.3c.01 3.99.014 4.082.08 4.39.368 1.66 1.548 2.844 3.224 3.235.22.05.497.06 2.29.07 1.856.012 2.048.009 2.097-.04.05-.05.053-.69.053-7.94 0-5.374-.01-7.906-.033-7.952-.033-.06-.09-.063-2.03-.06-1.578.004-2.052.014-2.26.05Zm3 14.665-1.35-.016c-1.242-.013-1.375-.02-1.623-.083a2.81 2.81 0 0 1-2.08-2.167c-.074-.335-.074-8.579-.004-8.907a2.85 2.85 0 0 1 1.716-2.05c.438-.176.64-.196 2.058-.2l1.282-.003v13.426Z" />
+                            </svg>
+                            <!-- Steam Icon -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="Steam">
+                                <path
+                                    d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
+                                <path
+                                    d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048" />
+                            </svg>
+                            <!-- Windows Icon -->
+                            <svg class="glance-icon" viewBox="0 0 24 24" fill="currentColor" title="Windows">
+                                <path
+                                    d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z" />
+                            </svg>
+                            <!-- Apple Icon -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="Apple">
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                            </svg>
+                            <!-- Android Icon -->
+                            <svg class="glance-icon" viewBox="0 0 128 128" fill="currentColor" title="Android">
+                                <path
+                                    d="M21.004 43.005c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736a7.338 7.338 0 007.342 7.343 7.33 7.33 0 007.338-7.342V50.342a7.345 7.345 0 00-7.346-7.337m59.192-27.602l5.123-9.355a1.023 1.023 0 00-.401-1.388 1.022 1.022 0 00-1.382.407l-5.175 9.453c-4.354-1.938-9.227-3.024-14.383-3.019-5.142-.005-10.013 1.078-14.349 3.005l-5.181-9.429a1.01 1.01 0 00-1.378-.406 1.007 1.007 0 00-.404 1.38l5.125 9.349c-10.07 5.193-16.874 15.083-16.868 26.438l66.118-.008c.003-11.351-6.789-21.221-16.845-26.427M48.94 29.86a2.772 2.772 0 01.003-5.545 2.78 2.78 0 012.775 2.774 2.775 2.775 0 01-2.778 2.771m30.107-.006a2.77 2.77 0 01-2.772-2.771 2.793 2.793 0 012.773-2.778 2.79 2.79 0 012.767 2.779 2.767 2.767 0 01-2.768 2.77M31.193 44.392l.011 47.635a7.822 7.822 0 007.832 7.831l5.333.002.006 16.264c-.001 4.05 3.291 7.342 7.335 7.342 4.056 0 7.342-3.295 7.343-7.347l-.004-16.26 9.909-.003.004 16.263c0 4.047 3.293 7.346 7.338 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.352-.004a7.835 7.835 0 007.836-7.834l-.009-47.635-65.624.011zm83.134 5.943a7.338 7.338 0 00-7.341-7.339c-4.053-.004-7.337 3.287-7.337 7.342l.006 30.738a7.334 7.334 0 007.339 7.339 7.337 7.337 0 007.338-7.343l-.005-30.737z" />
+                            </svg>
+                            <!-- Web Icon (Globe Outline) -->
+                            <svg class="glance-icon" viewBox="0 0 16 16" fill="currentColor" title="Web">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Biography</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid-single">
+                <p class="paragraph-lead">
+                    <strong>I live at the intersection of design, art and technology.</strong>
+                </p>
+                <p>
+                    Over the past decade, I’ve worked across the full production pipeline: collaborating on aesthetics
+                    with artists, writing C# for gameplay systems and analyzing player psychology to refine core loops.
+                    My programming background allows me to bridge engineering and art fluently, ensuring smooth
+                    development.
+                </p>
+                <p>
+                    As a dedicated gamer across all platforms, I stay deeply connected to current trends, mechanics and
+                    player behaviours. This active engagement sharpens my design instincts, directly informing how I
+                    build fresh, modern experiences.
+                </p>
+                <p>
+                    Whether composing spatial soundtracks, creating digital art, capturing street photography or
+                    crafting custom worlds and reactive mechanics within D&D, I treat every creative hobby as a chance
+                    to experiment with new perspectives and explore different ways of connection with people.
+                </p>
+
+                <div class="about-strengths">
+                    <h3 class="strengths-title">What I Bring to a Team</h3>
+                    <ul class="strengths-list">
+                        <li><strong>Creative and technical balance:</strong> A multi-disciplinary skill set that allows
+                            me to script mechanics and prototype concepts in-engine myself, while collaborating closely
+                            with art and development teams to design custom tools that make their workflows easier.</li>
+                        <li><strong>Attitude and collaboration:</strong> An eager creator and problem solver who loves
+                            diving into problems alongside others. I value transparency, direct feedback and keeping the
+                            focus entirely on what is best for the project. For me, human happiness and great chemistry
+                            always come first, because an inclusive, collaborative environment is what actually breeds
+                            incredible games.</li>
+                        <li><strong>Proven systems and scale:</strong> Hands-on experience designing core gameplay
+                            loops, systemic mechanics and curated level experiences. I focus on building integrated,
+                            scalable systems that connect dynamically for a cohesive, immersive game, proven to run
+                            smoothly for hundreds of millions of players.</li>
+                        <li><strong>Platform and genre agnostic:</strong> A design philosophy built on fundamental
+                            player psychology, making me entirely adaptable to any project. I am just as comfortable
+                            tuning systems for mobile as I am designing deep PC and console mechanics or shaping
+                            creative, artistic visions.</li>
+                    </ul>
+                </div>
+
+                <div class="quote-card-inline">
+                    <div class="quote-card">
+                        <svg class="icon-quote" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 6C7.5 6 6 7.5 6 9.5C6 11.5 7.5 13 9.5 13C10.5 13 11 12.5 11 12C11 11.5 10.5 11 10 11C9.5 11 9 10.5 9 10C9 8.5 10 8 10.5 8C11 8 11.5 7.5 11.5 7C11.5 6.5 10.5 6 9.5 6ZM16.5 6C14.5 6 13 7.5 13 9.5C13 11.5 14.5 13 16.5 13C17.5 13 18 12.5 18 12C18 11.5 17.5 11 17 11C16.5 11 16 10.5 16 10C16 8.5 17 8 17.5 8C18 8 18.5 7.5 18.5 7C18.5 6.5 17.5 6 16.5 6Z" />
+                        </svg>
+                        <p class="quote-text">
+                            "Your dedication, attitude and all round personality have made you a joy to work with."
+                        </p>
+                        <p class="quote-author">— Jay Armstrong</p>
+                        <p class="quote-author-title">Co-Founder, Massive Monster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Projects Portfolio</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="commercial">Commercial Hits</button>
+                <button class="filter-btn" data-filter="indie">Indie & Personal</button>
+                <button class="filter-btn" data-filter="academic">University & Audio</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- Project: Penguin Slide -->
+                <div class="project-card" data-category="indie">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="penguin_slide.png" alt="Penguin Slide">
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Mobile & Web</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Independent Solo Game Developer</span>
+                        <h3 class="project-card-title">Penguin Slide</h3>
+                        <p class="project-card-desc">
+                            Penguin Slide is an arcade puzzle game built for mobile and web and published on itch.io. As
+                            the sole developer, I designed the gameplay, programmed the mechanics, crafted the artwork
+                            and composed the sound effects and music.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="penguin-slide">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Woodoku -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="woodoku_banner.jpg" alt="Woodoku">
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">LiveOps</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Senior Game Designer</span>
+                        <h3 class="project-card-title">Woodoku</h3>
+                        <p class="project-card-desc">
+                            Woodoku is a highly popular mobile wood block puzzle game with over 150 million downloads.
+                            As Senior Game Designer, I owned the player experience by designing gameplay mechanics,
+                            levels, engineered shape-generation algorithms and optimised weekly LiveOps content.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="woodoku">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Woodoku Blast -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="woodoku_blast_banner.jpg" alt="Woodoku Blast">
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">UX & Haptics</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Senior Game Designer</span>
+                        <h3 class="project-card-title">Woodoku Blast</h3>
+                        <p class="project-card-desc">
+                            Woodoku Blast is a dynamic block puzzle game that expands on the original block puzzle
+                            formula. As the Senior Game Designer, I owned all gameplay mechanics, multiple features, UX
+                            design, haptics and audio.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="woodoku-blast">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Meathook -->
+                <div class="project-card" data-category="indie">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="meathook_banner.jpg" alt="Meathook">
+                        <div class="project-tags">
+                            <span class="tag">Indie Title</span>
+                            <span class="tag">Soundtrack & UI</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Game Design Consultant & Composer</span>
+                        <h3 class="project-card-title">Meathook</h3>
+                        <p class="project-card-desc">
+                            Meathook is a high-octane survival horror FPS. As a Game Design Consultant and Composer, I
+                            advised on all areas of the game's design and composed and produced the official soundtrack.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="meathook">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: The Adventure Pals -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="adventure_pals_banner.jpg" alt="The Adventure Pals">
+                        <div class="project-tags">
+                            <span class="tag">Massive Monster</span>
+                            <span class="tag">Level Design & QA</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Lead & Level Designer</span>
+                        <h3 class="project-card-title">The Adventure Pals</h3>
+                        <p class="project-card-desc">
+                            The Adventure Pals is a quirky action-packed platforming adventure game released on consoles
+                            and PC. As the QA Lead and Level Designer, I designed over half the levels and led quality
+                            assurance.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="adventure-pals">Learn
+                            More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Never Give Up -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_609420_header.jpg" alt="Never Give Up">
+                        <div class="project-tags">
+                            <span class="tag">Massive Monster</span>
+                            <span class="tag">Level Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Level Designer</span>
+                        <h3 class="project-card-title">Never Give Up</h3>
+                        <p class="project-card-desc">
+                            Never Give Up is a challenging death-platformer that tests player precision and patience. As
+                            a Level Designer, I created and curated dozens of levels and balanced the difficulty.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="never-give-up">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Solitaire.com -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="solitaire_banner.png" alt="Solitaire.com">
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">LiveOps & Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Senior Game Designer</span>
+                        <h3 class="project-card-title">Solitaire.com</h3>
+                        <p class="project-card-desc">
+                            Solitaire.com is a popular mobile version of the classic card game. As Senior Game Designer,
+                            I designed new levels, managed live operations and designed new features.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="solitaire">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: BRIX! Block Blast -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="brix_banner.jpg" alt="BRIX! Block Blast"
+                            style="object-position: left center;">
+                        <div class="project-tags">
+                            <span class="tag">Playtika</span>
+                            <span class="tag">Sole Designer</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Game Designer</span>
+                        <h3 class="project-card-title">BRIX! Block Blast</h3>
+                        <p class="project-card-desc">
+                            BRIX! Block Blast is a vibrant match-three puzzle game developed by Playtika. As the sole
+                            Game Designer for the project, I designed all levels, various mechanics and coordinated
+                            cross-functional teams.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="brix">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Jalopy -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_446020_header.jpg" alt="Jalopy">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Jalopy</h3>
+                        <p class="project-card-desc">
+                            Jalopy is an atmospheric driving simulation game where players maintain a classic car on a
+                            journey across Eastern Europe. As a QA Tester, I performed extensive testing to find bugs
+                            and ensure gameplay stability.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="jalopy">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Shoppe Keep -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_381120_header.jpg" alt="Shoppe Keep">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Shoppe Keep</h3>
+                        <p class="project-card-desc">
+                            Shoppe Keep is a fantasy business management simulator on PC and consoles. As a QA Tester, I
+                            rigorously tested the game to find bugs and ensure stability.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="shoppe-keep">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: World Ship Simulator -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_403980_header.jpg" alt="World Ship Simulator">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">World Ship Simulator</h3>
+                        <p class="project-card-desc">
+                            World Ship Simulator is a maritime simulation game featuring various naval vessels. As a QA
+                            Tester, I thoroughly tested gameplay to find and log bugs to guarantee stability.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal"
+                            data-project="world-ship-simulator">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Enforcer -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_318220_header.jpg" alt="Enforcer: Police Crime Action">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Enforcer</h3>
+                        <p class="project-card-desc">
+                            Enforcer is an open-world police simulator focused on law enforcement operations. As a QA
+                            Tester, I executed thorough gameplay testing to ensure overall game stability.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="enforcer">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Circuit Breakers -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_390870_header.jpg" alt="Circuit Breakers">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Circuit Breakers</h3>
+                        <p class="project-card-desc">
+                            Circuit Breakers is a fast-paced multiplayer twin-stick shooter. As a QA Tester, I conducted
+                            extensive gameplay testing, verifying and logging bugs to ensure stability.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="circuit-breakers">Learn
+                            More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Dissertation Project -->
+                <div class="project-card" data-category="academic">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="dissertation_banner.png" alt="Dissertation Project">
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">C# / Unity</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Student Researcher & Developer</span>
+                        <h3 class="project-card-title">Dissertation Project</h3>
+                        <p class="project-card-desc">
+                            My dissertation project investigated player reaction times through custom-built mobile
+                            games. As the Student Researcher and Developer, I programmed the games in Unity and analysed
+                            player performance data.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="dissertation">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: University Projects & Prototypes -->
+                <div class="project-card" data-category="academic">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="uni_projects_banner.jpg" alt="University Projects">
+                        <div class="project-tags">
+                            <span class="tag">C++ / C#</span>
+                            <span class="tag">Engines & Graphics</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Student Developer</span>
+                        <h3 class="project-card-title">University Projects & Prototypes</h3>
+                        <p class="project-card-desc">
+                            This collection covers a variety of academic game prototypes, engines and graphic tools. As
+                            the Student Developer, I created gyroscope shooters, programmed multithreaded ray-tracers
+                            and 3D-modelled assets.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal"
+                            data-project="university-combined">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: HYPNO & Electronic Music -->
+                <div class="project-card" data-category="indie">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="audio_banner.jpg" alt="HYPNO Electronic Music">
+                        <div class="project-tags">
+                            <span class="tag">Music Production</span>
+                            <span class="tag">Sound Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Music Producer & Composer</span>
+                        <h3 class="project-card-title">HYPNO</h3>
+                        <p class="project-card-desc">
+                            HYPNO is a creative electronic music project featuring original tracks and custom sound
+                            design. As the Composer and Producer, I co-wrote three singles, mixed and mastered the
+                            tracks and improvised performances on livestreams.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="hypno-music">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project: Swallows Rock Band -->
+                <div class="project-card" data-category="indie">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="swallows_banner.jpg" alt="Swallows Rock Band">
+                        <div class="project-tags">
+                            <span class="tag">Alternative Rock</span>
+                            <span class="tag">Songwriting</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Lead Guitarist</span>
+                        <h3 class="project-card-title">Swallows</h3>
+                        <p class="project-card-desc">
+                            Swallows is an alternative rock band that has released music internationally. As the Lead
+                            Guitarist, I co-wrote the songs, recorded in Milan with a Grammy award-winning producer and
+                            performed at a music festival.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="swallows-band">Learn More
+                            &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3 class="category-title">Design</h3>
+                    <ul class="skills-list">
+                        <li>Gameplay Design</li>
+                        <li>Level Design & Curation</li>
+                        <li>Puzzle Design</li>
+                        <li>Systems Design</li>
+                        <li>UI/UX Design & Wireframing</li>
+                        <li>Economies & Balancing</li>
+                        <li>Difficulty Optimisation</li>
+                        <li>QA Systems & Quality Curation</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">Tools & Engines</h3>
+                    <ul class="skills-list">
+                        <li>Unity Engine</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Figma / Miro</li>
+                        <li>JIRA / Confluence</li>
+                        <li>Git & GitHub</li>
+                        <li>Looker & Data Analytics</li>
+                        <li>Aseprite & Blender</li>
+                        <li>Unreal Engine</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">Programming & AI Tools</h3>
+                    <ul class="skills-list">
+                        <li>C# (Unity gameplay & systems)</li>
+                        <li>C++ (Engine & graphics development)</li>
+                        <li>SQL (Data query & processing)</li>
+                        <li>AI-Assisted Coding & Prompt Engineering</li>
+                        <li>Google AI Tools</li>
+                        <li>A/B Experimentation & Analytics</li>
+                        <li>Game physics & math fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests & Favorites Section -->
+    <section id="interests" class="interests-section">
+        <div class="section-container">
+            <div class="interests-grid">
+                <div class="interests-content">
+                    <div class="section-header align-left">
+                        <h2 class="section-title">Interests & Background</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <ul class="interests-list">
+                        <li><strong>Travelling:</strong> Currently travelling around Southeast Asia since February 2026.
+                        </li>
+                        <li><strong>Games:</strong> Constantly playing and staying up to date with the console, PC and
+                            mobile markets.</li>
+                        <li><strong>Music:</strong> Guitarist, self-taught music producer currently writing and
+                            producing 2 albums. Previously recorded with a Grammy-winning producer, aired by BBC
+                            Introducing and performed at a music festival.</li>
+                        <li><strong>Hardware & Audio:</strong> Self-taught in electronics. Build custom guitar pedals
+                            and modify acoustic/electric guitars.</li>
+                        <li><strong>Gaming Content:</strong> Former YouTube content creator with over 450,000 views,
+                            producing Let's Plays and walkthrough tutorials.</li>
+                    </ul>
+                </div>
+                <div class="favorites-content">
+                    <div class="section-header align-left">
+                        <h2 class="section-title">Favourite Games</h2>
+                        <div class="title-underline"></div>
+                    </div>
+
+                    <h3 class="favorites-subtitle">Recent Favourites</h3>
+                    <div class="games-cloud">
+                        <span class="game-tag">Baldur's Gate 3</span>
+                        <span class="game-tag">Clair Obscur: Expedition 33</span>
+                        <span class="game-tag">Kingdom Come Deliverance</span>
+                        <span class="game-tag">Fallout: London</span>
+                        <span class="game-tag">Cult of the Lamb</span>
+                        <span class="game-tag">Spider-Man</span>
+                        <span class="game-tag">Elden Ring</span>
+                    </div>
+
+                    <h3 class="favorites-subtitle" style="margin-top: 24px;">Formative Games</h3>
+                    <div class="games-cloud">
+                        <span class="game-tag">Pokemon</span>
+                        <span class="game-tag">Assassin's Creed</span>
+                        <span class="game-tag">Skyrim</span>
+                        <span class="game-tag">Halo</span>
+                        <span class="game-tag">The Witcher 3</span>
+                        <span class="game-tag">Runescape</span>
+                        <span class="game-tag">Chess</span>
+                        <span class="game-tag">Zelda</span>
+                        <span class="game-tag">Stardew Valley</span>
+                        <span class="game-tag">CS:GO</span>
+                        <span class="game-tag">Minecraft</span>
+                        <span class="game-tag">Rayman</span>
+                        <span class="game-tag">Cut the Rope</span>
+                        <span class="game-tag">Angry Birds</span>
+                        <span class="game-tag">Fallout</span>
+                        <span class="game-tag">Poker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Have an interesting project or opportunity? Let me know.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <p>I aim to reply to all inquiries within 24 hours during weekdays.</p>
+                    <ul class="contact-info-list">
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <a href="https://www.linkedin.com/in/jakewalder/"
+                                target="_blank">linkedin.com/in/jakewalder</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <a href="mailto:jiawalder@gmail.com">jiawalder@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:07805696730">07805696730</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Winchester, Hampshire, UK
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="contact-form" class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="5"
+                                placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit">Send Message</button>
+                    </form>
+                    <div class="form-success" id="form-success-msg" style="display: none;">
+                        <svg class="success-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Success! Your message has been received.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+            <div class="social-links">
+                <!-- Email -->
+                <a href="mailto:jiawalder@gmail.com" class="social-icon" aria-label="Email Address">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jakewalder/" target="_blank" class="social-icon"
+                    aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <!-- Itch.io (using a controller icon as stand-in) -->
+                <a href="https://walder.games" target="_blank" class="social-icon" aria-label="Itch.io Walder Games">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                        <path d="M6 12h4m2 0h4m-8-3v6m8-6v6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close Project Modal">&times;</button>
+            <div id="modal-project-details">
+                <!-- Content loaded dynamically via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
