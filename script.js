@@ -789,15 +789,36 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.addEventListener("submit", (e) => {
             e.preventDefault();
 
-            // Simulating message submission
-            contactForm.style.display = "none";
-            successMsg.style.display = "block";
-            successMsg.style.opacity = "0";
+            const data = new FormData(contactForm);
+            
+            fetch(contactForm.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    "Accept": "application/json"
+                }
+            }).then(response => {
+                if (response.ok) {
+                    contactForm.style.display = "none";
+                    successMsg.style.display = "block";
+                    successMsg.style.opacity = "0";
 
-            setTimeout(() => {
-                successMsg.style.transition = "opacity 0.4s ease";
-                successMsg.style.opacity = "1";
-            }, 50);
+                    setTimeout(() => {
+                        successMsg.style.transition = "opacity 0.4s ease";
+                        successMsg.style.opacity = "1";
+                    }, 50);
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, "errors")) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert("Oops! There was a problem submitting your form.");
+                        }
+                    });
+                }
+            }).catch(error => {
+                alert("Oops! There was a problem submitting your form.");
+            });
         });
     }
 
