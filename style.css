@@ -1450,10 +1450,6 @@ button, input, textarea {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .interests-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1465,7 +1461,7 @@ button, input, textarea {
     }
 
     .logo {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
     }
     
     .at-a-glance-card {
@@ -1568,11 +1564,11 @@ button, input, textarea {
 
 @media (max-width: 480px) {
     .header-container {
-        padding: 12px 12px !important;
+        padding: 10px 12px !important;
     }
 
     .logo {
-        font-size: 1.15rem !important;
+        font-size: 0.95rem !important;
         gap: 4px !important;
     }
     
@@ -1675,6 +1671,11 @@ button, input, textarea {
         font-size: 1.8rem !important;
     }
 
+    .interests-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
     /* Mobile Navigation Breakpoint Trigger Override */
     .mobile-menu-toggle {
         display: flex !important;
@@ -1705,8 +1706,11 @@ button, input, textarea {
 }
 
 @media (max-width: 360px) {
+    .header-container {
+        padding: 8px 8px !important;
+    }
     .logo {
-        font-size: 1.05rem !important;
+        font-size: 0.8rem !important;
         gap: 3px !important;
     }
 }
