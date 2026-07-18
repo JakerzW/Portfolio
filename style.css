@@ -534,6 +534,7 @@ button, input, textarea {
    ========================================================================== */
 .about-section {
     background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
 }
 
 .about-grid {
