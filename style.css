@@ -1460,8 +1460,28 @@ button, input, textarea {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        padding: 16px 16px !important;
+    }
+
     .logo {
         font-size: 1.5rem !important;
+    }
+    
+    .at-a-glance-card {
+        padding: 24px 16px !important;
+    }
+    
+    .glance-grid {
+        gap: 12px !important;
+    }
+    
+    .glance-number {
+        font-size: 2.2rem !important;
+    }
+    
+    .glance-label {
+        font-size: 1.05rem !important;
     }
     
     body {
@@ -1547,9 +1567,29 @@ button, input, textarea {
 }
 
 @media (max-width: 480px) {
+    .header-container {
+        padding: 12px 12px !important;
+    }
+
     .logo {
         font-size: 1.15rem !important;
         gap: 4px !important;
+    }
+    
+    .at-a-glance-card {
+        padding: 20px 12px !important;
+    }
+    
+    .glance-grid {
+        gap: 10px !important;
+    }
+    
+    .glance-number {
+        font-size: 1.8rem !important;
+    }
+    
+    .glance-label {
+        font-size: 0.9rem !important;
     }
     
     .hero-title {
@@ -1627,6 +1667,10 @@ button, input, textarea {
 }
 
 @media (max-width: 1152px) {
+    .header-container {
+        padding: 20px 20px !important;
+    }
+
     .logo {
         font-size: 1.8rem !important;
     }
