@@ -365,6 +365,10 @@ button, input, textarea {
     margin-bottom: 24px;
 }
 
+.text-accent {
+    color: var(--accent);
+}
+
 .text-glow {
     color: var(--text-primary);
     background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
