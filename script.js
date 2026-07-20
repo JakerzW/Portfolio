@@ -681,7 +681,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "swallows-band": {
             title: "Swallows",
             image: "swallows_banner.jpg",
-            subtitle: "Rock Band",
+            subtitle: "Alternative Rock Band",
             meta: {
                 role: "Lead Guitarist / Songwriter",
                 duration: "2017 - 2019",
@@ -689,7 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             body: `
                 <h4>Overview & Creative Role</h4>
-                <p>Co-managed the rock band, serving as joint songwriter, website designer and marketer. Promoted the band to platforms, venues and producers across Italy and the UK.</p>
+                <p>Co-managed the band, serving as joint songwriter, website designer and marketer. Promoted the band to platforms, venues and producers across Italy and the UK.</p>
                 
                 <h4>Key Details</h4>
                 <ul>
@@ -790,7 +790,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
 
             const data = new FormData(contactForm);
-            
+
             fetch(contactForm.action, {
                 method: "POST",
                 body: data,
@@ -846,7 +846,10 @@ document.addEventListener("DOMContentLoaded", () => {
         el.classList.add("reveal");
         scrollObserver.observe(el);
     });
+
 });
+
+
 
 // Add extra helper styles for reveal animations programmatically to style.css if needed,
 // but we already integrated smooth slide-up hover cards.
