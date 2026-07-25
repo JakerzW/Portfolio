@@ -1,7 +1,7 @@
 ======================================================================
 JAKE WALDER - GAME DESIGNER
 ======================================================================
-Winchester, SO21 | 07805696730 | jiawalder@gmail.com | JakeWalder.com
+07805696730 | jiawalder@gmail.com | JakeWalder.com
 
 Game Designer with a decade of experience shipping 20+ titles across PC, 
 console and mobile, dedicated to building innovative, player-first 
@@ -86,20 +86,6 @@ QA Tester | October 2015 - August 2016
   effectively identify, analyse and document bugs.
 
 ======================================================================
-EDUCATION
-======================================================================
-
-Bournemouth University
-BSc Games Programming (2:1) | September 2016 - June 2019
-----------------------------------------------------------------------
-* Completed a research dissertation involving a reaction-time-based 
-  mobile game in Unity (75%) and developed core skills through the 
-  following modules: Gameplay, Physics, UI, Core Loops and AI.
-
-Peter Symonds College
-Maths, Physics & Computing A-Levels | September 2013 - June 2015
-
-======================================================================
 PERSONAL PROJECTS
 ======================================================================
 
@@ -114,6 +100,20 @@ HYPNO (Electronic Music Duo) | 2020 - Present
 ----------------------------------------------------------------------
 * Co-wrote, produced and mixed 3 singles released across all major 
   music platforms; created custom single artwork using Photoshop.
+
+======================================================================
+EDUCATION
+======================================================================
+
+Bournemouth University
+BSc Games Programming (2:1) | September 2016 - June 2019
+----------------------------------------------------------------------
+* Completed a research dissertation involving a reaction-time-based 
+  mobile game in Unity (75%) and developed core skills through the 
+  following modules: Gameplay, Physics, UI, Core Loops and AI.
+
+Peter Symonds College
+Maths, Physics & Computing A-Levels | September 2013 - June 2015
 
 ======================================================================
 SKILLS
