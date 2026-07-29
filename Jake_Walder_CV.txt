@@ -27,7 +27,9 @@ Senior Game Designer | September 2022 - February 2026
   8-module corporate management development programme.
 * Team Collaboration: Directed the production of features and mechanics, 
   working closely with Product, Analysts, Development, Art and QA to 
-  create the best possible features from pre-production to post-release.
+  create the best possible features from pre-production to post-release. 
+  Contributed to creative brainstorming and provided advice on new game 
+  projects within the studio.
 * Data & Analytics: Utilised analysis skills and ran intensive experiments 
   to deeply understand player behaviour, evaluating the impact of design 
   iterations to guide feature improvements and future roadmaps.
