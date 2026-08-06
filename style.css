@@ -14,7 +14,7 @@
     --text-primary: #1c1917;
     --text-secondary: #44403c;
     --text-muted: #87827d;
-    --bg-header: rgba(255, 255, 255, 0.95);
+    --bg-header: rgba(254, 251, 243, 0.95);
     
     /* Layout Constants (Neo-Tactile Style) */
     --border-color: var(--text-primary);
