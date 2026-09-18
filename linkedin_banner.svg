@@ -1,0 +1,56 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&amp;display=swap');
+      .title-text {
+        font-family: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+      }
+      .dark-text {
+        fill: #1c1917;
+      }
+      .accent-text {
+        fill: #5b920a;
+      }
+    </style>
+    <!-- Ambient glows -->
+    <radialGradient id="glow-left" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#5b920a" stop-opacity="0.14"/>
+      <stop offset="70%" stop-color="#5b920a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-right" cx="100%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#46a08c" stop-opacity="0.09"/>
+      <stop offset="50%" stop-color="#5b920a" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#5b920a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="center-vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="35%" stop-color="#faf9f5" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#46a08c" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#5b920a" stop-opacity="0.09"/>
+    </radialGradient>
+    <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1584" height="396" fill="#faf9f5"/>
+
+  <!-- Radial gradient texture -->
+  <rect width="1584" height="396" fill="url(#center-vignette)"/>
+
+  <!-- Glows -->
+  <circle cx="50" cy="0" r="500" fill="url(#glow-left)"/>
+  <circle cx="1500" cy="380" r="500" fill="url(#glow-right)"/>
+
+  <!-- Subtle dot pattern -->
+  <rect width="1584" height="396" fill="url(#dot-pattern)"/>
+
+  <!-- Text group positioned safe from profile picture on bottom-left -->
+  <g transform="translate(440, 185)">
+    <text class="title-text dark-text" x="0" y="0">Making games you just</text>
+    <text class="title-text accent-text" x="0" y="74">can’t put down</text>
+  </g>
+</svg>

@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Banner Preview & Assets | Jake Walder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #fefbf3;
+      --bg-card: #faf7ee;
+      --accent: #5b920a;
+      --accent-hover: #457007;
+      --text-primary: #1c1917;
+      --text-secondary: #44403c;
+      --text-muted: #87827d;
+      --border-color: #1c1917;
+      --font-heading: 'Sora', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-secondary);
+      color: var(--text-secondary);
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    h1 {
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 24px;
+      background: var(--bg-card);
+      padding: 16px 20px;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 4px 4px 0 var(--border-color);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      cursor: pointer;
+      background: #ffffff;
+      color: var(--text-primary);
+      box-shadow: 3px 3px 0 var(--border-color);
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--accent);
+      border-color: var(--accent);
+    }
+    .btn.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--border-color);
+    }
+    .btn-download {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    .btn-download:hover {
+      background: var(--accent-hover);
+      color: #ffffff;
+    }
+
+    /* LinkedIn Preview Frame */
+    .preview-card {
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 6px 6px 0 var(--border-color);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .banner-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1584 / 396;
+      background: #faf9f5;
+      overflow: hidden;
+    }
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Safe Zone Guide */
+    .safe-zone-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: none;
+      z-index: 15;
+    }
+    .safe-zone-overlay.visible {
+      display: block;
+    }
+    .zone-box {
+      position: absolute;
+      border: 2px dashed rgba(220, 38, 38, 0.7);
+      background: rgba(220, 38, 38, 0.12);
+      color: #991b1b;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px;
+      font-family: monospace;
+    }
+    .zone-avatar {
+      bottom: 0;
+      left: 2.8%;
+      width: 14%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      transform: translateY(50%);
+    }
+    .zone-mobile-crop-l {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 8%;
+    }
+    .zone-mobile-crop-r {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 8%;
+    }
+
+    /* Avatar Overlay */
+    .avatar-circle {
+      position: absolute;
+      bottom: -60px;
+      left: 36px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #e2e8f0;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      font-weight: 700;
+      font-size: 14px;
+      z-index: 20;
+      transition: opacity 0.2s;
+    }
+    .profile-meta {
+      padding: 76px 36px 32px;
+      background: #ffffff;
+    }
+    .profile-meta h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+    .profile-meta p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .profile-meta .location {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    /* Grid of assets */
+    .assets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .asset-card {
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 4px 4px 0 var(--border-color);
+      display: flex;
+      flex-direction: column;
+    }
+    .asset-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+    .asset-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .asset-card .thumb {
+      width: 100%;
+      aspect-ratio: 1584 / 396;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      object-fit: cover;
+    }
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: rgba(91, 146, 10, 0.15);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>LinkedIn Profile Banners</h1>
+      <p class="subtitle">Matched to the Porcelain Pistachio portfolio theme and Sora font</p>
+    </header>
+
+    <!-- Interactive Controls -->
+    <div class="controls-bar">
+      <button class="btn active" id="btn-right" onclick="setBanner('right')">Right-Aligned (New)</button>
+      <button class="btn" id="btn-primary" onclick="setBanner('primary')">Left-Aligned 2-Line</button>
+      <button class="btn" id="btn-single" onclick="setBanner('single')">Single Line</button>
+      <button class="btn" id="btn-avatar" onclick="toggleAvatar()">Toggle Avatar Mockup</button>
+      <button class="btn" id="btn-safezone" onclick="toggleSafeZone()">Toggle Safe Zones</button>
+    </div>
+
+    <!-- LinkedIn Mockup Frame -->
+    <div class="preview-card">
+      <div class="banner-wrapper">
+        <img id="active-banner-img" class="banner-img" src="linkedin_banner_right_aligned.png" alt="LinkedIn Banner Preview">
+        
+        <!-- Safe Zone Overlay -->
+        <div id="safe-zone" class="safe-zone-overlay">
+          <div class="zone-box zone-avatar">Avatar Zone</div>
+          <div class="zone-box zone-mobile-crop-l">Mobile Crop</div>
+          <div class="zone-box zone-mobile-crop-r">Mobile Crop</div>
+        </div>
+
+        <!-- Avatar Circle -->
+        <div id="avatar" class="avatar-circle">Profile Photo</div>
+      </div>
+      <div class="profile-meta">
+        <h2>Jake Walder</h2>
+        <p>Senior Game Designer &amp; Level Designer</p>
+        <p class="location">London, United Kingdom · Contact info</p>
+      </div>
+    </div>
+
+    <!-- Downloadable Assets Cards -->
+    <h2 style="font-family: var(--font-heading); margin-bottom: 16px; color: var(--text-primary);">Download Ready-To-Upload Files</h2>
+    <div class="assets-grid">
+      <!-- Card 1: Right-aligned standard -->
+      <div class="asset-card">
+        <span class="badge">Recommended</span>
+        <h3>Right-Aligned Banner</h3>
+        <p>1584 &times; 396 px &bull; Clean right-aligned 2-line layout flush to the right edge with safe padding, leaving the entire left side open for your profile picture.</p>
+        <img class="thumb" src="linkedin_banner_right_aligned.png" alt="Right Aligned Banner">
+        <a class="btn btn-download" href="linkedin_banner_right_aligned.png" download="Jake_Walder_LinkedIn_Banner_RightAligned.png">Download PNG (1584&times;396)</a>
+      </div>
+
+      <!-- Card 2: Right-aligned 2x Retina -->
+      <div class="asset-card">
+        <span class="badge">Ultra-Sharp</span>
+        <h3>Right-Aligned 2x Retina</h3>
+        <p>3168 &times; 792 px &bull; High-resolution version of the right-aligned banner for crisp display on Retina screens and 4K monitors.</p>
+        <img class="thumb" src="linkedin_banner_right_aligned_2x.png" alt="Right Aligned 2x Banner">
+        <a class="btn btn-download" href="linkedin_banner_right_aligned_2x.png" download="Jake_Walder_LinkedIn_Banner_RightAligned_2x.png">Download PNG (3168&times;792)</a>
+      </div>
+
+      <!-- Card 3: Left-aligned standard -->
+      <div class="asset-card">
+        <span class="badge">Alternative</span>
+        <h3>Left-Aligned 2-Line Banner</h3>
+        <p>1584 &times; 396 px &bull; Left-aligned text offset to the center-right (X: 440px) to clear the profile photo.</p>
+        <img class="thumb" src="linkedin_banner.png" alt="Left Aligned Banner">
+        <a class="btn btn-download" href="linkedin_banner.png" download="Jake_Walder_LinkedIn_Banner_LeftAligned.png">Download PNG (1584&times;396)</a>
+      </div>
+
+      <!-- Card 4: Single-line -->
+      <div class="asset-card">
+        <span class="badge">Alternative</span>
+        <h3>Single-Line Banner</h3>
+        <p>1584 &times; 396 px &bull; Sleek horizontal single-line layout right-aligned safe from the profile picture.</p>
+        <img class="thumb" src="linkedin_banner_single_line.png" alt="Single Line Banner">
+        <a class="btn btn-download" href="linkedin_banner_single_line.png" download="Jake_Walder_LinkedIn_Banner_SingleLine.png">Download PNG (1584&times;396)</a>
+      </div>
+
+      <!-- Card 5: Right-aligned SVG -->
+      <div class="asset-card">
+        <span class="badge">Vector</span>
+        <h3>Right-Aligned Vector (SVG)</h3>
+        <p>Vector format with right-aligned text anchor, embedded gradients, glows, and Sora typography. Can be opened in Figma or Illustrator.</p>
+        <img class="thumb" src="linkedin_banner_right_aligned.svg" alt="Right Aligned SVG">
+        <a class="btn" href="linkedin_banner_right_aligned.svg" download="Jake_Walder_LinkedIn_Banner_RightAligned.svg">Download SVG</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setBanner(type) {
+      const img = document.getElementById('active-banner-img');
+      const btnR = document.getElementById('btn-right');
+      const btnP = document.getElementById('btn-primary');
+      const btnS = document.getElementById('btn-single');
+      btnR.classList.remove('active');
+      btnP.classList.remove('active');
+      btnS.classList.remove('active');
+
+      if (type === 'right') {
+        img.src = 'linkedin_banner_right_aligned.png';
+        btnR.classList.add('active');
+      } else if (type === 'primary') {
+        img.src = 'linkedin_banner.png';
+        btnP.classList.add('active');
+      } else {
+        img.src = 'linkedin_banner_single_line.png';
+        btnS.classList.add('active');
+      }
+    }
+    function toggleAvatar() {
+      const av = document.getElementById('avatar');
+      const btn = document.getElementById('btn-avatar');
+      if (av.style.display === 'none') {
+        av.style.display = 'flex';
+        btn.classList.add('active');
+      } else {
+        av.style.display = 'none';
+        btn.classList.remove('active');
+      }
+    }
+    function toggleSafeZone() {
+      const sz = document.getElementById('safe-zone');
+      const btn = document.getElementById('btn-safezone');
+      sz.classList.toggle('visible');
+      btn.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
