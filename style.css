@@ -1807,3 +1807,346 @@ button, input, textarea {
 }
 
 
+
+
+/* ==========================================================================
+   RECENT PROJECTS SECTION (HIGHLIGHTS)
+   ========================================================================== */
+.recent-projects-section {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+}
+
+.recent-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    align-items: stretch;
+}
+
+@media (max-width: 900px) {
+    .recent-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+.recent-card {
+    background-color: var(--bg-card);
+    border: var(--card-border-width, 2px) solid var(--card-border-color, var(--text-primary));
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--card-shadow, 4px 4px 0 var(--text-primary));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: var(--transition-normal);
+}
+
+.recent-card:hover {
+    transform: var(--card-hover-transform, translate(-2px, -2px));
+    box-shadow: var(--card-hover-shadow, 6px 6px 0 var(--accent));
+    border-color: var(--accent);
+}
+
+.recent-img-wrapper {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    background-color: #060911;
+}
+
+.recent-info {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.recent-card-actions {
+    margin-top: auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(var(--accent-rgb), 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.125rem;
+    padding: 14px 44px;
+    min-width: 180px;
+}
+
+.cta-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   DEDICATED SUBPAGES (PENGUIN SLIDE & MEATHOOK)
+   ========================================================================== */
+.subpage-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-header);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.subpage-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+.subpage-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    border: 2px solid var(--text-primary);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 3px 3px 0 var(--text-primary);
+    transition: var(--transition-normal);
+    text-decoration: none;
+}
+
+.subpage-back-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 4px 4px 0 var(--accent);
+    transform: translate(-1px, -1px);
+}
+
+.subpage-back-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+}
+
+.subpage-back-btn:hover svg {
+    transform: translateX(-3px);
+}
+
+.subpage-main {
+    min-height: calc(100vh - 160px);
+    padding: 40px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--hero-bg-color, var(--bg-primary));
+    background-image: var(--hero-bg-image, none);
+    background-size: var(--hero-bg-size, auto);
+    background-position: var(--hero-bg-position, center);
+}
+
+.subpage-container {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subpage-hero {
+    text-align: center;
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.subpage-badge {
+    display: inline-block;
+    background-color: rgba(var(--accent-rgb), 0.12);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 12px;
+}
+
+.subpage-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.subpage-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 620px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Portrait Game Stage (Penguin Slide) */
+.game-stage-container {
+    width: 100%;
+    max-width: 440px;
+    background-color: #0a0e17;
+    border: 2px solid var(--text-primary);
+    border-radius: var(--border-radius-md);
+    box-shadow: 6px 6px 0 var(--text-primary);
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 9 / 16;
+}
+
+.game-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background-color: #060911;
+}
+
+.game-placeholder-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0e1e2d 0%, #17364d 100%);
+}
+
+.game-placeholder-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    color: #6bc5e8;
+}
+
+.game-placeholder-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.game-placeholder-text {
+    font-size: 0.95rem;
+    color: #b0c9d9;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+/* Spotify Showcase Card (MEATHOOK) */
+.spotify-stage-card {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--bg-card);
+    border: 2px solid var(--text-primary);
+    border-radius: var(--border-radius-md);
+    box-shadow: 6px 6px 0 var(--text-primary);
+    padding: 28px;
+    overflow: hidden;
+}
+
+.spotify-iframe-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.spotify-iframe {
+    width: 100%;
+    height: 540px;
+    border: none;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Subpage External Actions */
+.subpage-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.subpage-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--text-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow: 3px 3px 0 var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+.subpage-action-btn:hover {
+    transform: translate(-1px, -1px);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 4px 4px 0 var(--accent);
+}
+
+.subpage-action-btn.btn-accent {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+.subpage-action-btn.btn-accent:hover {
+    background-color: var(--accent-hover);
+    color: #ffffff;
+    border-color: var(--text-primary);
+    box-shadow: 4px 4px 0 var(--text-primary);
+}
+
+.subpage-action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 600px) {
+    .subpage-title {
+        font-size: 2.1rem;
+    }
+    .spotify-stage-card {
+        padding: 16px;
+    }
+    .spotify-iframe {
+        height: 480px;
+    }
+    .game-stage-container {
+        max-width: 100%;
+    }
+}

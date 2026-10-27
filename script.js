@@ -18,6 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Make recent project cards clickable to their dedicated page
+    document.querySelectorAll(".recent-card").forEach(card => {
+        card.style.cursor = "pointer";
+        card.addEventListener("click", (e) => {
+            const targetUrl = card.getAttribute("data-href");
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            }
+        });
+
+        // Allow clicking the CTA button directly without conflict
+        const ctaBtn = card.querySelector(".recent-cta-btn");
+        if (ctaBtn) {
+            ctaBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+            });
+        }
+    });
+
     // Make project cards fully clickable to open the modal
     document.querySelectorAll(".project-card").forEach(card => {
         card.style.cursor = "pointer";
@@ -240,6 +259,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li>Utilised Antigravity coding tools to optimise and accelerate programming development.</li>
                 </ul>
                 <div class="modal-links-container">
+                    <a href="penguin-slide.html" class="modal-link-btn" style="background-color: var(--accent); color: #fff; border-color: var(--accent);">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                        Play on Site
+                    </a>
                     <a href="https://waldergames.itch.io/penguin-slide" target="_blank" class="modal-link-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         Play on itch.io
@@ -270,9 +293,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li>Designed atmospheric soundscapes and mixed spatial audio levels to enhance immersion.</li>
                 </ul>
                 <div class="modal-links-container">
+                    <a href="meathook.html" class="modal-link-btn" style="background-color: var(--accent); color: #fff; border-color: var(--accent);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                        Listen on Site
+                    </a>
                     <a href="https://store.steampowered.com/app/3644930/MEATHOOK/" target="_blank" class="modal-link-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         View on Steam
+                    </a>
+                    <a href="https://open.spotify.com/album/1ATo16BE0a23Oq4i24xFQZ" target="_blank" class="modal-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.498 17.306c-.216.353-.674.468-1.026.252-2.812-1.718-6.351-2.106-10.518-1.154-.403.092-.806-.157-.898-.56-.093-.404.156-.807.56-.899 4.562-1.042 8.484-.596 11.63 1.334.352.217.467.674.252 1.027zm1.467-3.262c-.272.443-.852.585-1.295.313-3.218-1.978-8.125-2.55-11.93-1.393-.497.15-1.028-.135-1.18-.631-.15-.497.135-1.028.631-1.18 4.356-1.321 9.774-.682 13.461 1.585.443.272.585.852.313 1.295zm.126-3.41c-3.859-2.292-10.228-2.503-13.896-1.389-.59.18-1.218-.16-1.398-.75-.18-.59.16-1.218.75-1.398 4.223-1.282 11.261-1.034 15.688 1.593.533.316.707 1.01.39 1.543-.316.533-1.01.707-1.543.39z"/></svg>
+                        Listen on Spotify
                     </a>
                     <a href="https://store.steampowered.com/app/4808380/MEATHOOK_Soundtrack/" target="_blank" class="modal-link-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>

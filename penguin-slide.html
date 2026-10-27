@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Penguin Slide online - an arcade puzzle game designed and developed by Jake Walder.">
+    <meta name="author" content="Jake Walder">
+    <title>Play Penguin Slide | Jake Walder - Game Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+
+<body>
+
+    <!-- Minimal Subpage Header -->
+    <header class="subpage-header">
+        <div class="subpage-header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
+            </a>
+            <a href="index.html#recent-projects" class="subpage-back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stage -->
+    <main class="subpage-main">
+        <div class="subpage-container">
+            <div class="subpage-hero">
+                <h1 class="subpage-title">Penguin Slide</h1>
+                <p class="subpage-desc">
+                    An arcade ice puzzle game built in Unity. Navigate maze-like frozen ponds where momentum is everything — once you slide, you don't stop until you hit an obstacle!
+                </p>
+            </div>
+
+            <!-- 9:16 Portrait Game Stage Frame -->
+            <div class="game-stage-container">
+                <!-- 
+                    ITCH.IO EMBED INSTRUCTIONS:
+                    To connect your direct itch.io HTML5 build:
+                    1. Go to https://itch.io/dashboard -> Click 'Edit Game' on Penguin Slide
+                    2. Go to 'Distribute' -> 'Embed game'
+                    3. Copy the embed iframe src URL (e.g., https://itch.io/embed-upload/XXXXXX?color=333333)
+                    4. Paste it into the src attribute below:
+                -->
+                <iframe 
+                    id="penguin-slide-frame"
+                    class="game-iframe"
+                    src="https://itch.io/embed-upload/18302566?color=263A5E"
+                    allowfullscreen="true"
+                    allow="autoplay; fullscreen; gamepad; focus-without-user-activation *"
+                    title="Penguin Slide Game">
+                </iframe>
+            </div>
+
+            <!-- External Actions -->
+            <div class="subpage-actions">
+                <a href="https://waldergames.itch.io/penguin-slide" target="_blank" class="subpage-action-btn btn-accent">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Open on itch.io
+                </a>
+                <a href="index.html#recent-projects" class="subpage-action-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear().toString();
+        }
+    </script>
+</body>
+
+</html>

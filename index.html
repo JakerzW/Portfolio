@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             </button>
             <nav class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#recent-projects" class="nav-link">Projects</a></li>
                     <li><a href="#about" class="nav-link">Biography</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#interests" class="nav-link">Interests</a></li>
@@ -65,7 +65,7 @@
                         experiences that just feel <strong>great to play</strong>.
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="#recent-projects" class="btn btn-primary">Explore Projects</a>
                         <a href="#contact" class="btn btn-secondary">Contact Me</a>
                         <a href="Jake_Walder_CV.pdf" class="btn btn-tertiary" download>
                             <svg class="icon-download" viewBox="0 0 24 24" fill="none"
@@ -149,6 +149,71 @@
     </section>
 
 
+
+    <!-- Recent Projects Section -->
+    <section id="recent-projects" class="recent-projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="recent-projects-grid">
+                <!-- Recent Project: Penguin Slide -->
+                <div class="recent-card" data-href="penguin-slide.html">
+                    <div class="project-img-wrapper recent-img-wrapper">
+                        <img class="project-img" src="penguin_slide.png" alt="Penguin Slide">
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Mobile & Web</span>
+                        </div>
+                    </div>
+                    <div class="project-info recent-info">
+                        <span class="project-client">Independent Solo Game Developer</span>
+                        <h3 class="project-card-title">Penguin Slide</h3>
+                        <p class="project-card-desc">
+                            Penguin Slide is an arcade puzzle game built for mobile and web and published on itch.io.
+                        </p>
+                        <div class="recent-card-actions">
+                            <a href="penguin-slide.html" class="btn btn-primary recent-cta-btn">
+                                <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Project: MEATHOOK -->
+                <div class="recent-card" data-href="meathook.html">
+                    <div class="project-img-wrapper recent-img-wrapper">
+                        <img class="project-img" src="meathook_banner.jpg" alt="MEATHOOK">
+                        <div class="project-tags">
+                            <span class="tag">Indie Title</span>
+                            <span class="tag">Soundtrack & UI</span>
+                        </div>
+                    </div>
+                    <div class="project-info recent-info">
+                        <span class="project-client">Game Design Consultant & Composer</span>
+                        <h3 class="project-card-title">MEATHOOK</h3>
+                        <p class="project-card-desc">
+                            Meathook is a high-octane survival horror FPS.
+                        </p>
+                        <div class="recent-card-actions">
+                            <a href="meathook.html" class="btn btn-primary recent-cta-btn">
+                                <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                                </svg>
+                                Listen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
