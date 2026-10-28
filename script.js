@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             projectCards.forEach(card => {
                 const category = card.getAttribute("data-category");
-                const isHighlight = card.getAttribute("data-highlight") !== "false";
+                const isHighlight = card.getAttribute("data-highlight") === "true";
                 const matches = (filterValue === "all") || 
-                                (filterValue === "highlights" && isHighlight) || 
+                                ((filterValue === "highlights" || filterValue === "best") && isHighlight) || 
                                 (category === filterValue);
 
                 if (matches) {
@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, 50);
                 } else {
                     card.style.display = "none";
+                    card.style.opacity = "0";
                 }
             });
         });
