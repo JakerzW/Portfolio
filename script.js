@@ -98,7 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             projectCards.forEach(card => {
                 const category = card.getAttribute("data-category");
-                if (filterValue === "all" || category === filterValue) {
+                const isHighlight = card.getAttribute("data-highlight") !== "false";
+                const matches = (filterValue === "all") || 
+                                (filterValue === "highlights" && isHighlight) || 
+                                (category === filterValue);
+
+                if (matches) {
                     card.style.display = "flex";
                     // Add subtle fade-in keyframe effect programmatically
                     card.style.opacity = "0";
