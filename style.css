@@ -2213,10 +2213,12 @@ button, input, textarea {
 }
 
 .game-stage-container.penguin-stage {
-    max-width: 360px;
+    width: 360px;
     height: 660px;
+    box-sizing: content-box;
     aspect-ratio: auto;
     background-color: #263A5E;
+    max-width: calc(100vw - 48px);
 }
 
 .game-stage-container.shape-shifter-stage {

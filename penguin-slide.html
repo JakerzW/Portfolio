@@ -42,7 +42,21 @@
         <div class="subpage-container">
             <!-- Playable Game Stage Frame -->
             <div class="game-stage-container penguin-stage">
-                <iframe frameborder="0" src="https://itch.io/embed-upload/20261643?color=263A5E" allowfullscreen="" width="360" height="660"><a href="https://waldergames.itch.io/penguin-slide">Play Penguin Slide on itch.io</a></iframe>
+                <iframe 
+                    id="penguin-slide-frame"
+                    class="game-iframe"
+                    src="https://itch.io/embed-upload/20263744?color=263A5E" 
+                    allowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    mozallowfullscreen="true" 
+                    msallowfullscreen="true" 
+                    allow="autoplay; fullscreen *; gamepad; focus-without-user-activation *" 
+                    frameborder="0" 
+                    width="360" 
+                    height="660"
+                    title="Penguin Slide">
+                    <a href="https://waldergames.itch.io/penguin-slide">Play Penguin Slide on itch.io</a>
+                </iframe>
             </div>
 
             <!-- External Actions -->
@@ -112,7 +126,7 @@
         // Return to referring section (Recent Projects vs Projects Portfolio)
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get("from") === "recent-projects") {
-            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+            document.querySelectorAll(".subpage-back-btn").forEach(btn => {
                 btn.href = "index.html#recent-projects";
             });
         }

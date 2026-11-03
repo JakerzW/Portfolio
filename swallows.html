@@ -127,7 +127,7 @@
         // Return to referring section (Recent Projects vs Projects Portfolio)
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get("from") === "recent-projects") {
-            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+            document.querySelectorAll(".subpage-back-btn").forEach(btn => {
                 btn.href = "index.html#recent-projects";
             });
         }
