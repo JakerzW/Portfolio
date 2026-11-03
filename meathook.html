@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,7 +27,7 @@
             <a href="index.html" class="logo">
                 <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
             </a>
-            <a href="index.html#recent-projects" class="subpage-back-btn">
+            <a href="index.html#projects" class="subpage-back-btn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
@@ -40,12 +40,26 @@
     <!-- Main Content Stage -->
     <main class="subpage-main">
         <div class="subpage-container">
-            <div class="subpage-hero">
+<!-- Header Block (Title, Company, Role, Duration, Platform) -->
+            <header class="subpage-header-block">
                 <h1 class="subpage-title">MEATHOOK</h1>
-                <p class="subpage-desc">
-                    High-octane industrial horror soundscapes and dark electronic rhythms composed, produced, mixed and mastered by Jake Walder (HYPNO) for Alex Rassloff's survival horror FPS <em>MEATHOOK</em>.
-                </p>
-            </div>
+                <p class="subpage-subtitle">Indie Title by Alex Rassloff</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Design Consultant / Composer</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>Feb 2025 - Jul 2026</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>PC (Steam)</value>
+                    </div>
+                </div>
+            </header>
 
             <!-- Spotify Player Embed Stage -->
             <div class="spotify-stage-card">
@@ -75,21 +89,43 @@
                     </svg>
                     Listen on Spotify
                 </a>
-                <a href="https://store.steampowered.com/app/4808380/MEATHOOK_Soundtrack/" target="_blank" class="subpage-action-btn">
+                <a href="https://store.steampowered.com/app/3644930/MEATHOOK/" target="_blank" class="subpage-action-btn">
                     <svg viewBox="0 0 16 16" fill="currentColor">
                         <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
                         <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048" />
                     </svg>
                     View on Steam
                 </a>
-                <a href="index.html#recent-projects" class="subpage-action-btn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                        <polyline points="12 19 5 12 12 5"></polyline>
+                <a href="https://store.steampowered.com/app/4808380/MEATHOOK_Soundtrack/" target="_blank" class="subpage-action-btn">
+                    <svg viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
+                        <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048" />
                     </svg>
-                    Back to Portfolio
+                    View Soundtrack
                 </a>
             </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h2 class="subpage-description-title">Role Overview</h2>
+                <div class="subpage-content-body">
+                    <p class="subpage-desc">
+                        High-octane industrial horror soundscapes and dark electronic rhythms composed, produced, mixed and mastered by Jake Walder (HYPNO) for Alex Rassloff's survival horror FPS <em>MEATHOOK</em>.
+                    </p>
+
+                    <h4>Design Consultation Scope</h4>
+                    <ul>
+                        <li>Consulted on all aspects of the game’s design, defining player progression, user flows, level design and difficulty.</li>
+                        <li>Utilised extensive design experience to detect bugs and refine core mechanic decisions.</li>
+                    </ul>
+
+                    <h4>Audio Production &amp; Composition</h4>
+                    <ul>
+                        <li>Co-wrote, produced, mixed and mastered the official game soundtrack under the musical alias <strong>HYPNO</strong>.</li>
+                        <li>Designed atmospheric soundscapes and mixed spatial audio levels to enhance immersion.</li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -105,6 +141,14 @@
         const yearEl = document.getElementById("current-year");
         if (yearEl) {
             yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
         }
     </script>
 </body>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Projects & Prototypes - Student Developer portfolio case study by Jake Walder.">
+    <meta name="author" content="Jake Walder">
+    <title>University Projects & Prototypes | Jake Walder - Game Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+
+<body>
+
+    <!-- Minimal Subpage Header -->
+    <header class="subpage-header">
+        <div class="subpage-header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
+            </a>
+            <a href="index.html#projects" class="subpage-back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stage -->
+    <main class="subpage-main">
+        <div class="subpage-container">
+<!-- Header Block (Title, Company, Role, Duration, Platform) -->
+            <header class="subpage-header-block">
+                <h1 class="subpage-title">University Projects &amp; Prototypes</h1>
+                <p class="subpage-subtitle">Bournemouth University</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Student Developer</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>Sep 2016 - Jun 2019</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>Unreal Engine, Unity, C++, C#, Maya</value>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 2:1 Banner Stage Container -->
+            <div class="banner-stage-container" style="background-image: url('uni_projects_banner.jpg');">
+                <img src="uni_projects_banner.jpg" alt="University Projects &amp; Prototypes" class="banner-stage-img">
+            </div>
+
+            <!-- External Actions -->
+            <div class="subpage-actions">
+                <a href="https://youtu.be/XCAlk5VJ4VY" target="_blank" class="subpage-action-btn btn-accent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Archer Video
+                </a>
+                <a href="https://youtu.be/XCAlk5VJ4VY" target="_blank" class="subpage-action-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    F1 Model Video
+                </a>
+                <a href="https://youtu.be/COLdsJVZXMo" target="_blank" class="subpage-action-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Unreal Cave Video
+                </a>
+            </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h2 class="subpage-description-title">Description</h2>
+                <div class="subpage-content-body">
+                    <h4>Archer &amp; Archer 2</h4>
+                    <ul>
+                        <li><strong>Archer:</strong> Programmed a classic 2D bow-and-arrow game from scratch in C++ using the Allegro graphics library.</li>
+                        <li><strong>Archer 2:</strong> Built an arcade target shooter in Unity utilising the device's internal gyroscope and motion sensors for physics-based aim.</li>                    
+                    </ul>
+
+                    <h4>C++ Engine &amp; Parallel Ray Tracer</h4>
+                    <ul>
+                        <li><strong>Custom Game Engine:</strong> Wrote a component-based 3D game engine (GameObject structure) featuring core loops, collisions and OpenGL pipelines.</li>    
+                        <li><strong>Parallel Ray Tracer:</strong> Developed a multithreaded rendering system in C++ allocating pixel segments to separate CPU cores, boosting render speeds by 300%.</li>
+                    </ul>
+
+                    <h4>Graphics &amp; Asset Assignments</h4>
+                    <ul>
+                        <li><strong>Unreal Level Design:</strong> Designed a cavern landscape focusing on pacing, guides and lighting contrast.</li>    
+                        <li><strong>3D Asteroids:</strong> Built a rendering engine from scratch in C++ to draw vector lines and manage 3D physics collisions.</li>
+                        <li><strong>Maya Modeling:</strong> Created a detailed vintage Formula 1 car mesh using blueprints, UV layouts and texture shaders.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
+        }
+    </script>
+</body>
+
+</html>

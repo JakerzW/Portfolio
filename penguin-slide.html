@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,7 +27,7 @@
             <a href="index.html" class="logo">
                 <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
             </a>
-            <a href="index.html#recent-projects" class="subpage-back-btn">
+            <a href="index.html#projects" class="subpage-back-btn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
@@ -40,13 +40,6 @@
     <!-- Main Content Stage -->
     <main class="subpage-main">
         <div class="subpage-container">
-            <div class="subpage-hero">
-                <h1 class="subpage-title">Penguin Slide</h1>
-                <p class="subpage-desc">
-                    An arcade ice puzzle game built in Unity. Navigate maze-like frozen ponds where momentum is everything — once you slide, you don't stop until you hit an obstacle!
-                </p>
-            </div>
-
             <!-- 9:16 Portrait Game Stage Frame -->
             <div class="game-stage-container">
                 <!-- 
@@ -75,14 +68,46 @@
                     </svg>
                     Open on itch.io
                 </a>
-                <a href="index.html#recent-projects" class="subpage-action-btn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                        <polyline points="12 19 5 12 12 5"></polyline>
-                    </svg>
-                    Back to Portfolio
-                </a>
             </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h1 class="subpage-title">Penguin Slide</h1>
+                <p class="subpage-subtitle">Walder Games</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Creator</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>Feb 2026 - Present</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>Android &amp; Web</value>
+                    </div>
+                </div>
+
+                <h2 class="subpage-description-title">Description</h2>
+                <div class="subpage-content-body">
+                    <p class="subpage-desc">
+                        An arcade ice puzzle game built in Unity. Navigate maze-like frozen ponds where momentum is everything — once you slide, you don't stop until you hit an obstacle!
+                    </p>
+
+                    <h4>Overview &amp; Development Scope</h4>
+                    <p>Designed, developed and self-published <em>Penguin Slide</em>, an arcade mobile and web game. This project demonstrates end-to-end solo game development capabilities.</p>
+                    
+                    <h4>Contributions &amp; Implementation Details</h4>
+                    <ul>
+                        <li>Programmed all gameplay controllers, mechanics, physics, menus and level infrastructure in Unity using C#.</li>
+                        <li>Crafted all visual assets, user interface layouts, sprite sheets and character designs using Aseprite.</li>
+                        <li>Composed and produced the original soundtrack and all sound effects using Ableton.</li>
+                        <li>Utilised Antigravity coding tools to optimise and accelerate programming development.</li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -98,6 +123,14 @@
         const yearEl = document.getElementById("current-year");
         if (yearEl) {
             yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
         }
     </script>
 </body>

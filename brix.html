@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRIX! Block Blast - Game Designer portfolio case study by Jake Walder.">
+    <meta name="author" content="Jake Walder">
+    <title>BRIX! Block Blast | Jake Walder - Game Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+
+<body>
+
+    <!-- Minimal Subpage Header -->
+    <header class="subpage-header">
+        <div class="subpage-header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
+            </a>
+            <a href="index.html#projects" class="subpage-back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stage -->
+    <main class="subpage-main">
+        <div class="subpage-container">
+<!-- Header Block (Title, Company, Role, Duration, Platform) -->
+            <header class="subpage-header-block">
+                <h1 class="subpage-title">BRIX! Block Blast</h1>
+                <p class="subpage-subtitle">Playtika</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Game Designer</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>Jun 2020 - Jun 2022</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>Mobile (iOS &amp; Android)</value>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 2:1 Banner Stage Container -->
+            <div class="banner-stage-container" style="background-image: url('brix_banner.jpg'); background-position: left center;">
+                <img src="brix_banner.jpg" alt="BRIX! Block Blast" class="banner-stage-img" style="object-position: left center;">
+            </div>
+
+            <!-- External Actions -->
+            <div class="subpage-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.generagames.brixcandyblockblast&hl=en_GB&gl=US" target="_blank" class="subpage-action-btn btn-accent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Google Play Link
+                </a>
+            </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h2 class="subpage-description-title">Role Overview</h2>
+                <div class="subpage-content-body">
+                    <h4>Overview &amp; Responsibilities</h4>
+                    <p>Collaborated closely with the Product Lead as the sole game designer in the London studio, owning game design pipelines, features, levels and specs for <em>BRIX! Blast Friends</em> and <em>BRIX! Blast Rivals</em>.</p>
+                    
+                    <h4>Key Achievements &amp; Features Designed</h4>
+                    <ul>
+                        <li>Designed and curated dozens of game features, drafting detailed specification sheets, wireframes and UI mockups from ideation to final build.</li>
+                        <li>Solely responsible for level design, utilising analytics to identify problematic levels, optimise difficulty spikes and boost player retention.</li>
+                        <li>Acted as the cross-functional coordinator aligning developer and artist pipelines with design visions.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
+        }
+    </script>
+</body>
+
+</html>

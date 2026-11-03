@@ -159,8 +159,34 @@
             </div>
 
             <div class="recent-projects-grid">
+                <!-- Recent Project: Shape Shifter -->
+                <div class="recent-card" data-href="shape-shifter.html?from=recent-projects">
+                    <div class="project-img-wrapper recent-img-wrapper">
+                        <img class="project-img" src="shape_shifter_banner.svg" alt="Shape Shifter">
+                        <div class="project-tags">
+                            <span class="tag">React & Web</span>
+                            <span class="tag">Puzzle Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info recent-info">
+                        <span class="project-client">Rapid AI Prototype</span>
+                        <h3 class="project-card-title">Shape Shifter</h3>
+                        <p class="project-card-desc">
+                            Shape Shifter is an AI prototype of a shape-based puzzle game made in 1 day.
+                        </p>
+                        <div class="recent-card-actions">
+                            <a href="shape-shifter.html?from=recent-projects" class="btn btn-primary recent-cta-btn">
+                                <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Recent Project: Penguin Slide -->
-                <div class="recent-card" data-href="penguin-slide.html">
+                <div class="recent-card" data-href="penguin-slide.html?from=recent-projects">
                     <div class="project-img-wrapper recent-img-wrapper">
                         <img class="project-img" src="penguin_slide.png" alt="Penguin Slide">
                         <div class="project-tags">
@@ -169,13 +195,13 @@
                         </div>
                     </div>
                     <div class="project-info recent-info">
-                        <span class="project-client">Independent Solo Game Developer</span>
+                        <span class="project-client">Indie Game Developer</span>
                         <h3 class="project-card-title">Penguin Slide</h3>
                         <p class="project-card-desc">
-                            Penguin Slide is an arcade puzzle game built for mobile and web and published on itch.io.
+                            Penguin Slide is an retro arcade puzzle game built for mobile and web.
                         </p>
                         <div class="recent-card-actions">
-                            <a href="penguin-slide.html" class="btn btn-primary recent-cta-btn">
+                            <a href="penguin-slide.html?from=recent-projects" class="btn btn-primary recent-cta-btn">
                                 <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
@@ -186,7 +212,7 @@
                 </div>
 
                 <!-- Recent Project: MEATHOOK -->
-                <div class="recent-card" data-href="meathook.html">
+                <div class="recent-card" data-href="meathook.html?from=recent-projects">
                     <div class="project-img-wrapper recent-img-wrapper">
                         <img class="project-img" src="meathook_banner.jpg" alt="MEATHOOK">
                         <div class="project-tags">
@@ -201,7 +227,7 @@
                             MEATHOOK is a survival horror rail-shooter with a physics-driven weapon system.
                         </p>
                         <div class="recent-card-actions">
-                            <a href="meathook.html" class="btn btn-primary recent-cta-btn">
+                            <a href="meathook.html?from=recent-projects" class="btn btn-primary recent-cta-btn">
                                 <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
                                     <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
@@ -235,8 +261,8 @@
             <!-- Projects Grid -->
             <div class="projects-grid" id="projects-grid">
 
-                <!-- Project: Penguin Slide -->
-                <div class="project-card" data-highlight="true" data-category="indie">
+                <!-- 1. Penguin Slide -->
+                <div class="project-card" data-highlight="true" data-category="indie" data-href="penguin-slide.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="penguin_slide.png" alt="Penguin Slide">
                         <div class="project-tags">
@@ -245,20 +271,17 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-client">Independent Solo Game Developer</span>
+                        <span class="project-client">Indie Game Developer</span>
                         <h3 class="project-card-title">Penguin Slide</h3>
                         <p class="project-card-desc">
-                            Penguin Slide is an arcade puzzle game built for mobile and web and published on itch.io. As
-                            the sole developer, I designed the gameplay, programmed the mechanics, crafted the artwork
-                            and composed the sound effects and music.
+                            Penguin Slide is an arcade puzzle game built for mobile and web and published on itch.io. As the sole developer, I designed the gameplay, programmed the mechanics, crafted the artwork and composed the sound effects and music.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="penguin-slide">Learn More
-                            &rarr;</a>
+                        <a href="penguin-slide.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Woodoku -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 2. Woodoku -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="woodoku.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="woodoku_banner.jpg" alt="Woodoku">
                         <div class="project-tags">
@@ -270,38 +293,14 @@
                         <span class="project-client">Senior Game Designer</span>
                         <h3 class="project-card-title">Woodoku</h3>
                         <p class="project-card-desc">
-                            Woodoku is a highly popular mobile wood block puzzle game with over 150 million downloads.
-                            As Senior Game Designer, I owned the player experience by designing gameplay mechanics,
-                            levels, engineered shape-generation algorithms and optimised weekly LiveOps content.
+                            Woodoku is a highly popular mobile wood block puzzle game with over 150 million downloads. As Senior Game Designer, I owned the player experience by designing gameplay mechanics, levels, engineered shape-generation algorithms and optimised weekly LiveOps content.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="woodoku">Learn More
-                            &rarr;</a>
+                        <a href="woodoku.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Meathook -->
-                <div class="project-card" data-highlight="true" data-category="indie">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="meathook_banner.jpg" alt="Meathook">
-                        <div class="project-tags">
-                            <span class="tag">Indie Title</span>
-                            <span class="tag">Soundtrack & UI</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">Game Design Consultant & Composer</span>
-                        <h3 class="project-card-title">Meathook</h3>
-                        <p class="project-card-desc">
-                            Meathook is a high-octane survival horror FPS. As a Game Design Consultant and Composer, I
-                            advised on all areas of the game's design and composed and produced the official soundtrack.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="meathook">Learn More
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: The Adventure Pals -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 3. The Adventure Pals -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="adventure-pals.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="adventure_pals_banner.jpg" alt="The Adventure Pals">
                         <div class="project-tags">
@@ -313,39 +312,52 @@
                         <span class="project-client">QA Lead & Level Designer</span>
                         <h3 class="project-card-title">The Adventure Pals</h3>
                         <p class="project-card-desc">
-                            The Adventure Pals is a quirky action-packed platforming adventure game released on consoles
-                            and PC. As the QA Lead and Level Designer, I designed over half the levels and led quality
-                            assurance.
+                            The Adventure Pals is a quirky action-packed platforming adventure game released on consoles and PC. As the QA Lead and Level Designer, I designed over half the levels and led quality assurance.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="adventure-pals">Learn
-                            More &rarr;</a>
+                        <a href="adventure-pals.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Woodoku Blast -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 4. MEATHOOK -->
+                <div class="project-card" data-highlight="true" data-category="indie" data-href="meathook.html">
                     <div class="project-img-wrapper">
-                        <img class="project-img" src="woodoku_blast_banner.jpg" alt="Woodoku Blast">
+                        <img class="project-img" src="meathook_banner.jpg" alt="MEATHOOK">
                         <div class="project-tags">
-                            <span class="tag">Mobile</span>
-                            <span class="tag">UX & Haptics</span>
+                            <span class="tag">Indie Title</span>
+                            <span class="tag">Soundtrack & UI</span>
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-client">Senior Game Designer</span>
-                        <h3 class="project-card-title">Woodoku Blast</h3>
+                        <span class="project-client">Game Design Consultant & Composer</span>
+                        <h3 class="project-card-title">MEATHOOK</h3>
                         <p class="project-card-desc">
-                            Woodoku Blast is a dynamic block puzzle game that expands on the original block puzzle
-                            formula. As the Senior Game Designer, I owned all gameplay mechanics, multiple features, UX
-                            design, haptics and audio.
+                            MEATHOOK is a high-octane survival horror FPS. As a Game Design Consultant and Composer, I advised on all areas of the game's design and composed and produced the official soundtrack.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="woodoku-blast">Learn More
-                            &rarr;</a>
+                        <a href="meathook.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Never Give Up -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 5. Shape Shifter -->
+                <div class="project-card" data-highlight="true" data-category="indie" data-href="shape-shifter.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="shape_shifter_banner.svg" alt="Shape Shifter">
+                        <div class="project-tags">
+                            <span class="tag">React & Web</span>
+                            <span class="tag">Puzzle Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Rapid AI Prototype</span>
+                        <h3 class="project-card-title">Shape Shifter</h3>
+                        <p class="project-card-desc">
+                            Shape Shifter is a spatial deduction and polyomino puzzle game (Wordle meets Tangrams) originally prototyped in a spreadsheet before being translated into a neon arcade web and mobile experience featuring 23 handcrafted levels.
+                        </p>
+                        <a href="shape-shifter.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 6. Never Give Up -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="never-give-up.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="steam_609420_header.jpg" alt="Never Give Up">
                         <div class="project-tags">
@@ -357,37 +369,52 @@
                         <span class="project-client">Level Designer</span>
                         <h3 class="project-card-title">Never Give Up</h3>
                         <p class="project-card-desc">
-                            Never Give Up is a challenging death-platformer that tests player precision and patience. As
-                            a Level Designer, I created and curated dozens of levels and balanced the difficulty.
+                            Never Give Up is a challenging death-platformer that tests player precision and patience. As a Level Designer, I created and curated dozens of levels and balanced the difficulty.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="never-give-up">Learn More
-                            &rarr;</a>
+                        <a href="never-give-up.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Solitaire.com -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 7. Woodoku Blast -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="woodoku-blast.html">
                     <div class="project-img-wrapper">
-                        <img class="project-img" src="solitaire_banner.png" alt="Solitaire.com">
+                        <img class="project-img" src="woodoku_blast_banner.jpg" alt="Woodoku Blast">
                         <div class="project-tags">
                             <span class="tag">Mobile</span>
-                            <span class="tag">LiveOps & Design</span>
+                            <span class="tag">UX & Haptics</span>
                         </div>
                     </div>
                     <div class="project-info">
                         <span class="project-client">Senior Game Designer</span>
-                        <h3 class="project-card-title">Solitaire.com</h3>
+                        <h3 class="project-card-title">Woodoku Blast</h3>
                         <p class="project-card-desc">
-                            Solitaire.com is a popular mobile version of the classic card game. As Senior Game Designer,
-                            I designed new levels, managed live operations and designed new features.
+                            Woodoku Blast is a dynamic block puzzle game that expands on the original block puzzle formula. As the Senior Game Designer, I owned all gameplay mechanics, multiple features, UX design, haptics and audio.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="solitaire">Learn More
-                            &rarr;</a>
+                        <a href="woodoku-blast.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: BRIX! Block Blast -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 8. Jalopy -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="jalopy.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_446020_header.jpg" alt="Jalopy">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Jalopy</h3>
+                        <p class="project-card-desc">
+                            Jalopy is an atmospheric driving simulation game where players maintain a classic car on a journey across Eastern Europe. As a QA Tester, I performed extensive testing to find bugs and ensure gameplay stability.
+                        </p>
+                        <a href="jalopy.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 9. BRIX! Block Blast -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="brix.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="brix_banner.jpg" alt="BRIX! Block Blast"
                             style="object-position: left center;">
@@ -400,39 +427,14 @@
                         <span class="project-client">Game Designer</span>
                         <h3 class="project-card-title">BRIX! Block Blast</h3>
                         <p class="project-card-desc">
-                            BRIX! Block Blast is a vibrant match-three puzzle game developed by Playtika. As the sole
-                            Game Designer for the project, I designed all levels, various mechanics and coordinated
-                            cross-functional teams.
+                            BRIX! Block Blast is a vibrant match-three puzzle game developed by Playtika. As the sole Game Designer for the project, I designed all levels, various mechanics and coordinated cross-functional teams.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="brix">Learn More
-                            &rarr;</a>
+                        <a href="brix.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Jalopy -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="steam_446020_header.jpg" alt="Jalopy">
-                        <div class="project-tags">
-                            <span class="tag">Excalibur</span>
-                            <span class="tag">QA Testing</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">QA Tester</span>
-                        <h3 class="project-card-title">Jalopy</h3>
-                        <p class="project-card-desc">
-                            Jalopy is an atmospheric driving simulation game where players maintain a classic car on a
-                            journey across Eastern Europe. As a QA Tester, I performed extensive testing to find bugs
-                            and ensure gameplay stability.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="jalopy">Learn More
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: Shoppe Keep -->
-                <div class="project-card" data-highlight="true" data-category="commercial">
+                <!-- 10. Shoppe Keep -->
+                <div class="project-card" data-highlight="true" data-category="commercial" data-href="shoppe-keep.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="steam_381120_header.jpg" alt="Shoppe Keep">
                         <div class="project-tags">
@@ -444,79 +446,14 @@
                         <span class="project-client">QA Tester</span>
                         <h3 class="project-card-title">Shoppe Keep</h3>
                         <p class="project-card-desc">
-                            Shoppe Keep is a fantasy business management simulator on PC and consoles. As a QA Tester, I
-                            rigorously tested the game to find bugs and ensure stability.
+                            Shoppe Keep is a fantasy business management simulator on PC and consoles. As a QA Tester, I rigorously tested the game to find bugs and ensure stability.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="shoppe-keep">Learn More
-                            &rarr;</a>
+                        <a href="shoppe-keep.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: World Ship Simulator -->
-                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="steam_403980_header.jpg" alt="World Ship Simulator">
-                        <div class="project-tags">
-                            <span class="tag">Excalibur</span>
-                            <span class="tag">QA Testing</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">QA Tester</span>
-                        <h3 class="project-card-title">World Ship Simulator</h3>
-                        <p class="project-card-desc">
-                            World Ship Simulator is a maritime simulation game featuring various naval vessels. As a QA
-                            Tester, I thoroughly tested gameplay to find and log bugs to guarantee stability.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal"
-                            data-project="world-ship-simulator">Learn More &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: Enforcer -->
-                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="steam_318220_header.jpg" alt="Enforcer: Police Crime Action">
-                        <div class="project-tags">
-                            <span class="tag">Excalibur</span>
-                            <span class="tag">QA Testing</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">QA Tester</span>
-                        <h3 class="project-card-title">Enforcer</h3>
-                        <p class="project-card-desc">
-                            Enforcer is an open-world police simulator focused on law enforcement operations. As a QA
-                            Tester, I executed thorough gameplay testing to ensure overall game stability.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="enforcer">Learn More
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: Circuit Breakers -->
-                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="steam_390870_header.jpg" alt="Circuit Breakers">
-                        <div class="project-tags">
-                            <span class="tag">Excalibur</span>
-                            <span class="tag">QA Testing</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">QA Tester</span>
-                        <h3 class="project-card-title">Circuit Breakers</h3>
-                        <p class="project-card-desc">
-                            Circuit Breakers is a fast-paced multiplayer twin-stick shooter. As a QA Tester, I conducted
-                            extensive gameplay testing, verifying and logging bugs to ensure stability.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="circuit-breakers">Learn
-                            More &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: Dissertation Project -->
-                <div class="project-card" data-highlight="true" data-category="academic">
+                <!-- 11. Dissertation Project -->
+                <div class="project-card" data-highlight="true" data-category="academic" data-href="dissertation.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="dissertation_banner.png" alt="Dissertation Project">
                         <div class="project-tags">
@@ -528,39 +465,14 @@
                         <span class="project-client">Student Researcher & Developer</span>
                         <h3 class="project-card-title">Dissertation Project</h3>
                         <p class="project-card-desc">
-                            My dissertation project investigated player reaction times through custom-built mobile
-                            games. As the Student Researcher and Developer, I programmed the games in Unity and analysed
-                            player performance data.
+                            My dissertation project investigated player reaction times through custom-built mobile games. As the Student Researcher and Developer, I programmed the games in Unity and analysed player performance data.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="dissertation">Learn More
-                            &rarr;</a>
+                        <a href="dissertation.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: University Projects & Prototypes -->
-                <div class="project-card" data-highlight="false" style="display: none;" data-category="academic">
-                    <div class="project-img-wrapper">
-                        <img class="project-img" src="uni_projects_banner.jpg" alt="University Projects">
-                        <div class="project-tags">
-                            <span class="tag">C++ / C#</span>
-                            <span class="tag">Engines & Graphics</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-client">Student Developer</span>
-                        <h3 class="project-card-title">University Projects & Prototypes</h3>
-                        <p class="project-card-desc">
-                            This collection covers a variety of academic game prototypes, engines and graphic tools. As
-                            the Student Developer, I created gyroscope shooters, programmed multithreaded ray-tracers
-                            and 3D-modelled assets.
-                        </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal"
-                            data-project="university-combined">Learn More &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Project: HYPNO & Electronic Music -->
-                <div class="project-card" data-highlight="true" data-category="indie">
+                <!-- 12. HYPNO -->
+                <div class="project-card" data-highlight="true" data-category="indie" data-href="hypno.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="audio_banner.jpg" alt="HYPNO Electronic Music">
                         <div class="project-tags">
@@ -572,17 +484,109 @@
                         <span class="project-client">Music Producer & Composer</span>
                         <h3 class="project-card-title">HYPNO</h3>
                         <p class="project-card-desc">
-                            HYPNO is a creative electronic music project featuring original tracks and custom sound
-                            design. As the Composer and Producer, I co-wrote three singles, mixed and mastered the
-                            tracks and improvised performances on livestreams.
+                            HYPNO is a creative electronic music project featuring original tracks and custom sound design. As the Composer and Producer, I co-wrote three singles, mixed and mastered the tracks and improvised performances on livestreams.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="hypno-music">Learn More
-                            &rarr;</a>
+                        <a href="hypno.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project: Swallows Rock Band -->
-                <div class="project-card" data-highlight="false" style="display: none;" data-category="indie">
+                <!-- 13. Solitaire.com (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial" data-href="solitaire.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="solitaire_banner.png" alt="Solitaire.com">
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">LiveOps & Design</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Senior Game Designer</span>
+                        <h3 class="project-card-title">Solitaire.com</h3>
+                        <p class="project-card-desc">
+                            Solitaire.com is a popular mobile version of the classic card game. As Senior Game Designer, I designed new levels, managed live operations and designed new features.
+                        </p>
+                        <a href="solitaire.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 14. World Ship Simulator (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial" data-href="world-ship-simulator.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_403980_header.jpg" alt="World Ship Simulator">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">World Ship Simulator</h3>
+                        <p class="project-card-desc">
+                            World Ship Simulator is a maritime simulation game featuring various naval vessels. As a QA Tester, I thoroughly tested gameplay to find and log bugs to guarantee stability.
+                        </p>
+                        <a href="world-ship-simulator.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 15. Enforcer (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial" data-href="enforcer.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_318220_header.jpg" alt="Enforcer: Police Crime Action">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Enforcer</h3>
+                        <p class="project-card-desc">
+                            Enforcer is an open-world police simulator focused on law enforcement operations. As a QA Tester, I executed thorough gameplay testing to ensure overall game stability.
+                        </p>
+                        <a href="enforcer.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 16. Circuit Breakers (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="commercial" data-href="circuit-breakers.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="steam_390870_header.jpg" alt="Circuit Breakers">
+                        <div class="project-tags">
+                            <span class="tag">Excalibur</span>
+                            <span class="tag">QA Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">QA Tester</span>
+                        <h3 class="project-card-title">Circuit Breakers</h3>
+                        <p class="project-card-desc">
+                            Circuit Breakers is a fast-paced multiplayer twin-stick shooter. As a QA Tester, I conducted extensive gameplay testing, verifying and logging bugs to ensure stability.
+                        </p>
+                        <a href="circuit-breakers.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 17. University Projects & Prototypes (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="academic" data-href="university-projects.html">
+                    <div class="project-img-wrapper">
+                        <img class="project-img" src="uni_projects_banner.jpg" alt="University Projects">
+                        <div class="project-tags">
+                            <span class="tag">C++ / C#</span>
+                            <span class="tag">Engines & Graphics</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-client">Student Developer</span>
+                        <h3 class="project-card-title">University Projects & Prototypes</h3>
+                        <p class="project-card-desc">
+                            This collection covers a variety of academic game prototypes, engines and graphic tools. As the Student Developer, I created gyroscope shooters, programmed multithreaded ray-tracers and 3D-modelled assets.
+                        </p>
+                        <a href="university-projects.html" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- 18. Swallows (Non-highlight) -->
+                <div class="project-card" data-highlight="false" style="display: none;" data-category="indie" data-href="swallows.html">
                     <div class="project-img-wrapper">
                         <img class="project-img" src="swallows_banner.jpg" alt="Swallows Rock Band">
                         <div class="project-tags">
@@ -594,12 +598,9 @@
                         <span class="project-client">Lead Guitarist</span>
                         <h3 class="project-card-title">Swallows</h3>
                         <p class="project-card-desc">
-                            Swallows is an alternative rock band that has released music internationally. As the Lead
-                            Guitarist, I co-wrote the songs, recorded in Milan with a Grammy award-winning producer and
-                            performed at a music festival.
+                            Swallows is an alternative rock band that has released music internationally. As the Lead Guitarist, I co-wrote the songs, recorded in Milan with a Grammy award-winning producer and performed at a music festival.
                         </p>
-                        <a href="javascript:void(0)" class="btn-text open-modal" data-project="swallows-band">Learn More
-                            &rarr;</a>
+                        <a href="swallows.html" class="btn-text">Learn More &rarr;</a>
                     </div>
                 </div>
 
@@ -615,9 +616,6 @@
                 <div class="title-underline"></div>
             </div>
             <div class="about-grid-single">
-                <p class="paragraph-lead">
-                    <strong>I live at the intersection of design, art and technology.</strong>
-                </p>
                 <p>
                     Over the past decade I’ve worked in all areas of game development. From designing and programming
                     mechanics to brainstorming new features, creating or collaborating on art and meticulously testing
@@ -880,18 +878,6 @@
             <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Project Detail Modal -->
-    <div class="modal" id="project-modal" aria-hidden="true">
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="modal-close" aria-label="Close Project Modal">&times;</button>
-            <div id="modal-project-details">
-                <!-- Content loaded dynamically via script.js -->
-            </div>
-        </div>
-    </div>
-
 
     <!-- Scripts -->
     <script src="script.js?v=1.3"></script>

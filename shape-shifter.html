@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Shape-shifter online - a neon arcade spatial deduction and polyomino puzzle game designed by Jake Walder.">
+    <meta name="author" content="Jake Walder">
+    <title>Play Shape-shifter | Jake Walder - Game Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+
+<body>
+
+    <!-- Minimal Subpage Header -->
+    <header class="subpage-header">
+        <div class="subpage-header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
+            </a>
+            <a href="index.html#projects" class="subpage-back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stage -->
+    <main class="subpage-main">
+        <div class="subpage-container">
+            <!-- Responsive Arcade Game Stage Frame -->
+            <div class="game-stage-container shape-shifter-stage">
+                <iframe
+                    id="shape-shifter-frame"
+                    class="game-iframe"
+                    src="shape-shifter/index.html"
+                    title="Shape-shifter Playable Game"
+                    allowfullscreen="true"
+                    allow="clipboard-write; fullscreen"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- External Actions -->
+            <div class="subpage-actions">
+                <a href="shape-shifter/index.html" target="_blank" class="subpage-action-btn btn-accent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" y1="3" x2="14" y2="10"></line>
+                        <line x1="3" y1="21" x2="10" y2="14"></line>
+                    </svg>
+                    Play Fullscreen
+                </a>
+            </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h1 class="subpage-title">Shape-shifter</h1>
+                <p class="subpage-subtitle">Walder Games</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Creator &amp; Game Designer</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>2026</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>Mobile &amp; Web (React)</value>
+                    </div>
+                </div>
+
+                <h2 class="subpage-description-title">Description</h2>
+                <div class="subpage-content-body">
+                    <p class="subpage-desc">
+                        A neon arcade polyomino deduction puzzle game — Wordle meets Tangrams. Fit 6 shapes onto the 5&times;5 grid within 3 attempts, deducing which piece rotates 90&deg; and which flips horizontally using cell-by-cell feedback!
+                    </p>
+
+                    <h4>Overview &amp; Rapid Prototyping</h4>
+                    <p><em>Shape-shifter</em> is a mobile-first neon arcade spatial deduction and polyomino puzzle game — blending the logical deduction of <em>Wordle</em> with the spatial reasoning of <em>Tangrams</em> and <em>Pentominoes</em>. Originally designed, tested and balanced in a custom Excel spreadsheet prototype, it was translated into a responsive web and mobile interactive experience built with React and Tailwind CSS.</p>
+                    
+                    <h4>Core Mechanics &amp; Systems Design</h4>
+                    <ul>
+                        <li><strong>Deduction Grid &amp; Polyomino Bank:</strong> Players are presented with a 5&times;5 grid featuring pre-placed blocked tiles and a bank of 6 distinct polyomino shapes to fit into their true target positions within 3 attempts.</li>
+                        <li><strong>Hidden Transformations:</strong> Up to 1 shape may require a 90&deg; clockwise rotation and up to 1 shape may require a horizontal flip across the Y-axis — challenging players to deduce both position and orientation.</li>
+                        <li><strong>Strategic Feedback Loop:</strong> Players can submit a full board or strategically submit a partially filled board to receive cell-by-cell Tick (&check;) and Cross (&cross;) clues on two mini 5&times;5 attempt history grids. Any shape placed 100% accurately locks onto the board for subsequent attempts.</li>
+                        <li><strong>23 Handcrafted Levels &amp; Polish:</strong> Features 23 progressively challenging puzzles, hybrid drag-and-drop and tap-to-place controls, interchangeable duplicate piece detection, symmetry-aware transform validation and Wordle-style emoji result sharing.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
+        }
+    </script>
+</body>
+
+</html>

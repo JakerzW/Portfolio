@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dissertation Project - Student Researcher & Developer portfolio case study by Jake Walder.">
+    <meta name="author" content="Jake Walder">
+    <title>Dissertation Project | Jake Walder - Game Designer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+
+<body>
+
+    <!-- Minimal Subpage Header -->
+    <header class="subpage-header">
+        <div class="subpage-header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Jake Walder</span><span class="logo-pipe"></span><span class="logo-title">Game Designer</span>
+            </a>
+            <a href="index.html#projects" class="subpage-back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Stage -->
+    <main class="subpage-main">
+        <div class="subpage-container">
+<!-- Header Block (Title, Company, Role, Duration, Platform) -->
+            <header class="subpage-header-block">
+                <h1 class="subpage-title">Dissertation Project</h1>
+                <p class="subpage-subtitle">Bournemouth University</p>
+
+                <div class="subpage-meta-grid">
+                    <div class="modal-meta-item">
+                        <label>Role</label>
+                        <value>Student Researcher &amp; Developer</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Duration</label>
+                        <value>Sep 2018 - Jun 2019</value>
+                    </div>
+                    <div class="modal-meta-item">
+                        <label>Platform</label>
+                        <value>Mobile (Android)</value>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 2:1 Banner Stage Container -->
+            <div class="banner-stage-container" style="background-image: url('dissertation_banner.png');">
+                <img src="dissertation_banner.png" alt="Dissertation Project" class="banner-stage-img">
+            </div>
+
+            <!-- External Actions -->
+            <div class="subpage-actions">
+                <a href="https://github.com/JakerzW/StimuliProject" target="_blank" class="subpage-action-btn btn-accent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub Repository
+                </a>
+            </div>
+
+            <!-- Description Section -->
+            <section class="subpage-description">
+                <h2 class="subpage-description-title">Description</h2>
+                <div class="subpage-content-body">
+                    <h4>Overview &amp; Research Goals</h4>
+                    <p>Completed a research-based dissertation project involving video games developed for mobile. The study focused on validating the positive cognitive effects of video games on the physical reaction-time of players.</p>
+                    
+                    <h4>Key Details &amp; Implementations</h4>
+                    <ul>
+                        <li>Programmed a series of reaction-time testing games in Unity (C#).</li>
+                        <li>Gathered gameplay metrics from dozens of test players, recording accuracy and latency.</li>
+                        <li>Authored a comprehensive analysis paper evaluating the correlation between video games and physical reaction times.</li>
+                        <li>Achieved a grade of 75% for the final dissertation thesis and code implementation.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Jake Walder. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear().toString();
+        }
+
+        // Return to referring section (Recent Projects vs Projects Portfolio)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("from") === "recent-projects") {
+            document.querySelectorAll(".subpage-back-btn, .subpage-action-btn:last-child").forEach(btn => {
+                btn.href = "index.html#recent-projects";
+            });
+        }
+    </script>
+</body>
+
+</html>
