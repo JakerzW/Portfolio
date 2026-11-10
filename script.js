@@ -196,6 +196,97 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollObserver.observe(el);
     });
 
+    // ==========================================================================
+    // HERO SHOWREEL BACKGROUND & FULL VIDEO MODAL
+    // ==========================================================================
+    const heroSection = document.getElementById("hero");
+    const heroBgVideo = document.getElementById("hero-bg-video");
+    const watchShowreelBtn = document.getElementById("watch-showreel-btn");
+    const showreelModal = document.getElementById("showreel-modal");
+    const showreelModalClose = document.getElementById("showreel-modal-close");
+    const showreelModalOverlay = document.getElementById("showreel-modal-overlay");
+    const showreelFullVideo = document.getElementById("showreel-full-video");
+
+    if (showreelFullVideo) {
+        showreelFullVideo.volume = 0.5;
+    }
+
+    let isHeroInView = true;
+
+    const openShowreelModal = () => {
+        if (!showreelModal) return;
+        showreelModal.classList.add("active");
+        showreelModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+
+        if (heroBgVideo) {
+            heroBgVideo.pause();
+        }
+
+        if (showreelFullVideo) {
+            showreelFullVideo.volume = 0.5;
+            const playPromise = showreelFullVideo.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // User can still press play manually if autoplay is restricted
+                });
+            }
+        }
+    };
+
+    const closeShowreelModal = () => {
+        if (!showreelModal || !showreelModal.classList.contains("active")) return;
+        showreelModal.classList.remove("active");
+        showreelModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+
+        if (showreelFullVideo) {
+            showreelFullVideo.pause();
+        }
+
+        if (heroBgVideo && isHeroInView) {
+            const bgPlayPromise = heroBgVideo.play();
+            if (bgPlayPromise !== undefined) {
+                bgPlayPromise.catch(() => {});
+            }
+        }
+    };
+
+    if (watchShowreelBtn) {
+        watchShowreelBtn.addEventListener("click", openShowreelModal);
+    }
+    if (showreelModalClose) {
+        showreelModalClose.addEventListener("click", closeShowreelModal);
+    }
+    if (showreelModalOverlay) {
+        showreelModalOverlay.addEventListener("click", closeShowreelModal);
+    }
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && showreelModal && showreelModal.classList.contains("active")) {
+            closeShowreelModal();
+        }
+    });
+
+    // Auto-pause background loop when hero section is scrolled out of view
+    if (heroSection && heroBgVideo && "IntersectionObserver" in window) {
+        const heroVideoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isHeroInView = entry.isIntersecting;
+                const isModalOpen = showreelModal && showreelModal.classList.contains("active");
+                if (entry.isIntersecting && !isModalOpen) {
+                    const playPromise = heroBgVideo.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(() => {});
+                    }
+                } else {
+                    heroBgVideo.pause();
+                }
+            });
+        }, { threshold: 0.05 });
+
+        heroVideoObserver.observe(heroSection);
+    }
+
 });
 
 
