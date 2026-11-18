@@ -2221,6 +2221,14 @@ button, input, textarea {
     font-weight: 700;
 }
 
+.subpage-content-body h5 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 20px 0 10px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
 .subpage-content-body p {
     font-size: 1.05rem;
     color: var(--text-secondary);

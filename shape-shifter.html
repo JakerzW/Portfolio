@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 
 <body>
@@ -88,8 +88,31 @@
 
                 <h2 class="subpage-description-title">Description</h2>
                 <div class="subpage-content-body">                    
-                    <p><em>Shape-Shifter</em> is a mobile-first neon arcade spatial deduction and polyomino puzzle game — blending the logical deduction of <em>Wordle</em> with the spatial reasoning of <em>Tangrams</em> and <em>Pentominoes</em>. Originally designed, tested and balanced in a custom Excel spreadsheet prototype, it was translated into a responsive web and mobile interactive experience built with React and Tailwind CSS.</p>
-                    
+                    <p><em>Shape-Shifter</em> is a mobile-first neon arcade spatial deduction and polyomino puzzle game — blending the logical deduction of <em>Wordle</em> with the spatial reasoning of <em>Tangrams</em> and <em>Pentominoes</em>.</p>
+
+                    <h4>The Story</h4>
+                    <p>I designed Shape-Shifter while I was working on Woodoku at Tripledot. It was meant to be a daily challenge – one deterministic puzzle a day that takes a few attempts to crack, with the goal to solve it in as few as possible.</p>
+                    <p>I prototyped it in Excel. That might sound odd, but a spreadsheet is basically a ready-made grid. I could fill cells with colour to make shapes, copy and paste pieces and whole puzzles around, and export to CSV if I needed to. It meant I could design and test puzzles quickly without building anything.</p>
+                    <p>We ran it across the whole Tripledot studio for 30 days and tracked who played to get some early metrics. The best signal was people coming up to me asking when we were going to make the full version.</p>
+                    <p>The biggest lesson was how fine the balance is for a daily game. It has to be challenging without being frustrating, so players come away satisfied and feeling smart, and want to come back tomorrow.</p>
+                    <p>The version here came later. I gave AI the Excel sheet and built this playable React version in an afternoon with a handful of prompts, so I could put it on my site.</p>
+
+                    <h4>Design Challenge: Finding the Perfect Solve</h4>
+                    <p>Playtesting showed two problems with the puzzles, and each one shaped a core mechanic.</p>
+
+                    <h5>1. More than one solution</h5>
+                    <ul>
+                        <li><strong>The problem:</strong> The first playtest showed people could solve the same puzzle in several different ways. For a daily puzzle where the aim is to solve it in as few attempts as possible, there needed to be one perfect solve.</li>
+                        <li><strong>The solution:</strong> A Wordle-style hint system. After each attempt, players see whether each shape is fully correct, partially correct or not correct at all, so they can narrow down the one true answer.</li>
+                    </ul>
+
+                    <h5>2. Too easy to solve</h5>
+                    <ul>
+                        <li><strong>The problem:</strong> Even with one set answer, the solves were still a bit too easy.</li>
+                        <li><strong>The solution:</strong> Hidden transformations. One shape might need rotating and another might need flipping, so players have to work out both where each shape goes and which way round it sits.</li>
+                        <li><strong>The result:</strong> Just enough extra difficulty, without tipping into frustration.</li>
+                    </ul>
+
                     <h4>Core Mechanics &amp; Systems Design</h4>
                     <ul>
                         <li><strong>Deduction Grid &amp; Polyomino Bank:</strong> Players are presented with a 5&times;5 grid featuring pre-placed blocked tiles and a bank of 6 distinct polyomino shapes to fit into their true target positions within 3 attempts.</li>

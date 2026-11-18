@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 
 <body>
@@ -96,7 +96,32 @@
                     </p>
 
                     <p>Designed, developed and self-published independently, this project demonstrates my end-to-end solo game development capabilities.</p>
-                    
+
+                    <h4>The Story</h4>
+                    <p>Penguin Slide started with Pokémon FireRed and Emerald. I used to spend ages in the ice caves, sliding around just because it felt so satisfying, but the puzzles stuck with me too. They were simple to understand and genuinely tricky to solve, and I always felt there was a whole game hiding in that one mechanic.</p>
+                    <p>I started building it in Chiang Mai, a month into travelling after leaving my job. The plan was six months completely away from games. That lasted about four weeks before the ideas started piling up and I was desperate to make something again. It sounds cheesy, but that's when I knew games weren't just my job. It's what I'm meant to be doing.</p>
+                    <p>It had to be ice, to capture the Pokémon games I loved, and a penguin sliding around on its belly felt like the perfect (and cutest) way to bring it to life. The mechanics borrow from Pokémon too: redirect tiles from the gym puzzles, ice cubes you push like Strength boulders, and portals that work like the gym teleporters.</p>
+                    <p>It was my first time doing pixel art, so I learnt Aseprite from scratch, animation included. The music came from five years of producing in Ableton. I wanted the art to pay homage to Pokémon while still having its own identity, and I'm really happy with where it landed.</p>
+                    <p>My girlfriend was my only playtester, but she was instrumental in the level design. She made sure the easy levels were actually easy and the hard ones were actually hard. She got me to redesign the outer tiles after they made her eyes hurt, and she gave the official sign-off that the penguin was cute.</p>
+                    <p>It's now live on itch.io and I'm still building it. Next up: more levels, new mechanics like the cracking floors from Mirage Tower in Pokémon Emerald, and costumes you can unlock with the stars you earn.</p>
+
+                    <h4>Design Challenge: Cracking the Ice Cubes</h4>
+                    <p>The ice cubes were the hardest feature to get right, and they caused two separate problems.</p>
+
+                    <h5>1. Keeping ice cubes on the grid (technical)</h5>
+                    <ul>
+                        <li><strong>The setup:</strong> I build levels from a prefab template and a tile palette, and all the game logic runs on that tile grid.</li>
+                        <li><strong>The problem:</strong> The player starts as a tile and turns into a player object when the level loads. The ice cubes needed to move too, but if they worked the same way they'd no longer exist on the grid, and the game logic would lose track of them.</li>
+                        <li><strong>The solution:</strong> Each ice cube turns back into a tile after every move, so the grid always knows where it is.</li>
+                    </ul>
+
+                    <h5>2. Giving ice cubes more depth (design)</h5>
+                    <ul>
+                        <li><strong>The problem:</strong> Pushing an ice cube from one place to another didn't add much depth on its own.</li>
+                        <li><strong>The solution:</strong> A Newton's cradle effect. Slide one ice cube into another and the momentum transfers, so the player can use one cube to whack another across the ice.</li>
+                        <li><strong>The result:</strong> Paths are much harder to visualise when the ice cubes aren't in position yet. That opened up far more options for level design, made for more interesting levels and improved the progression across the game.</li>
+                    </ul>
+
                     <h4>Implementation Details</h4>
                     <ul>
                         <li>Programmed all gameplay controllers, mechanics, physics, menus and level infrastructure in Unity using C#.</li>
